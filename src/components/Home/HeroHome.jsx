@@ -30,7 +30,7 @@ export default function HeroHome() {
       </nav>
 
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
-        <h1 className="text-5xl md:text-6xl font-extrabold italic">Revolutionizing Communication<br />For Movers</h1>
+        <h1 className="text-3xl md:text-6xl font-extrabold italic">Revolutionizing Communication<br />For Movers</h1>
         <p className="mt-4 text-lg md:text-xl max-w-2xl">
           Crafting personal connections through the blend of old-world charm and modern tech.
         </p>
