@@ -1,4 +1,5 @@
 import BlogGrid from "@/components/Home/BlogGrid";
+import ContactSection from "@/components/Home/ContactSection";
 import ElevateSection from "@/components/Home/ElevateSection";
 import FaqSection from "@/components/Home/FaqSection";
 import HomeServices from "@/components/Home/HomeServices";
@@ -20,6 +21,7 @@ export default function Home() {
     <Testimonials/>
     <FaqSection/>
     <BlogGrid/>
+    <ContactSection/>
    </div>
   );
 }

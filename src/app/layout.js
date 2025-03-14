@@ -1,5 +1,6 @@
 import HeroHome from "@/components/Home/HeroHome";
 import "./globals.css";
+import Footer from "@/components/Home/Footer";
 
 
 export const metadata = {
@@ -13,6 +14,7 @@ export default function RootLayout({ children }) {
       <body>
         <HeroHome/>
         {children}
+        <Footer/>
       </body>
     </html>
   );
