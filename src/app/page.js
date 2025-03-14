@@ -1,4 +1,5 @@
 import ElevateSection from "@/components/Home/ElevateSection";
+import FaqSection from "@/components/Home/FaqSection";
 import HomeServices from "@/components/Home/HomeServices";
 import MovingLettersSection from "@/components/Home/MovingLettersSection";
 import PersonalTouch from "@/components/Home/PersonalTouch";
@@ -16,6 +17,7 @@ export default function Home() {
     <WhyHandwrittenLetters/>
     <PersonalTouch/>
     <Testimonials/>
+    <FaqSection/>
    </div>
   );
 }
