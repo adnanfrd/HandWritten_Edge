@@ -5,7 +5,6 @@ const WhyHandwrittenLetters = () => {
   return (
     <section className="py-16 px-6 md:px-12 lg:px-20 xl:px-28 bg-white">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        {/* Left Content */}
         <div>
           <h2 className="text-4xl md:text-5xl font-bold italic text-black">
             Why Handwritten <br /> Letters?
@@ -17,7 +16,6 @@ const WhyHandwrittenLetters = () => {
             It’s a simple gesture that tells our clients they’re more than just another move to us. In an industry where trust can set us apart, a personal touch can be our competitive edge.
           </p>
 
-          {/* Bullet Points */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-6 text-lg">
             {[
               "Personal Touch",
@@ -37,13 +35,11 @@ const WhyHandwrittenLetters = () => {
             ))}
           </div>
 
-          {/* Button */}
           <button className="mt-6 px-6 py-3 bg-black text-white font-semibold rounded-lg hover:bg-gray-800 transition">
             Learn More
           </button>
         </div>
 
-        {/* Right Image */}
         <div className="flex justify-center">
           <Image
             src="/whyletter.webp"
