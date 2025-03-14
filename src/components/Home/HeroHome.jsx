@@ -10,24 +10,19 @@ export default function NavbarHero() {
 
   return (
     <div className="relative w-full h-screen overflow-hidden">
-      {/* Background Video */}
       <video autoPlay loop muted className="absolute inset-0 w-full h-full object-cover">
         <source src="/MovingLetters-Christmas-Ad-web.mp4" type="video/mp4" />
       </video>
 
-      {/* Dark Overlay */}
       <div className="absolute inset-0  bg-opacity-40" style={{background: "#33293D",
     opacity: "0.2"}}></div>
 
-      {/* Navbar */}
       <nav className="absolute top-0 left-0 right-0 flex justify-between items-center px-6 md:px-12 h-[12vh] bg-transparent text-white">
-        {/* Logo */}
         <div className="flex items-center space-x-2">
           <Image src="/logohand.jpg" alt="Logo" width={50} height={50} />
           <span className="text-lg font-semibold">HandWritten.ai</span>
         </div>
 
-        {/* Desktop Menu */}
         <div className="hidden md:flex space-x-6 items-center">
           <Link href="#" className="hover:text-purple-300">Home</Link>
           <Link href="#" className="hover:text-purple-300">About Us</Link>
@@ -37,12 +32,10 @@ export default function NavbarHero() {
           <button className="bg-white text-black px-4 py-2 rounded-md">Contact Us</button>
         </div>
 
-        {/* Mobile Menu Button */}
         <button className="md:hidden text-white" onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
 
-        {/* Mobile Menu Dropdown */}
         {isOpen && (
           <div className="absolute top-[12vh] left-0 w-full bg-black bg-opacity-95 flex flex-col items-center py-6 space-y-4 md:hidden">
             <Link href="#" className="text-white hover:text-purple-300" onClick={() => setIsOpen(false)}>Home</Link>
@@ -55,7 +48,6 @@ export default function NavbarHero() {
         )}
       </nav>
 
-      {/* Hero Section */}
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
         <h1 className="text-3xl md:text-6xl font-extrabold italic">Revolutionizing Communication<br />For Movers</h1>
         <p className="mt-4 text-lg md:text-xl max-w-2xl">
