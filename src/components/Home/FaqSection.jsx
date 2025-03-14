@@ -61,7 +61,7 @@ const FaqSection = () => {
         <h2 className="text-3xl md:text-4xl font-bold text-center italic text-black mb-4">
           Frequently Asked Questions
         </h2>
-        <p className="text-center text-gray-600 max-w-2xl mx-auto mb-10">
+        <p className="text-center text-gray-600 max-w-3xl mx-auto mb-10">
         Navigating the world of handwritten robotic letters might feel like venturing into uncharted waters. We totally get it. That’s why we’ve curated this section to answer some of the burning questions you might have about our services. Dive into the nuances, understand the behind-the-scenes magic, and discover the passion and precision we pour into every letter. These FAQs are your gateway to understanding how MovingLetters.ai is revolutionizing communication for movers, one handwritten note at a time        </p>
 
         <div className="grid md:grid-cols-2 gap-8">

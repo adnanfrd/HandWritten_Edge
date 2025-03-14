@@ -1,3 +1,4 @@
+import BlogGrid from "@/components/Home/BlogGrid";
 import ElevateSection from "@/components/Home/ElevateSection";
 import FaqSection from "@/components/Home/FaqSection";
 import HomeServices from "@/components/Home/HomeServices";
@@ -18,6 +19,7 @@ export default function Home() {
     <PersonalTouch/>
     <Testimonials/>
     <FaqSection/>
+    <BlogGrid/>
    </div>
   );
 }
