@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "framer-motion";
 import ServiceCard from "./ServiceCard";
 
 const HomeServices = () => {
@@ -24,13 +27,33 @@ const HomeServices = () => {
 
   return (
     <section className="py-16 px-4 bg-white text-center">
-      <h2 className="text-4xl font-extrabold italic">Our Services</h2>
-      <p className="mt-2 text-gray-600 max-w-2xl mx-auto">
+      <motion.h2
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        className="text-4xl font-extrabold italic"
+      >
+        Our Services
+      </motion.h2>
+      <motion.p
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+        className="mt-2 text-gray-600 max-w-2xl mx-auto"
+      >
         Experience unmatched efficiency with MovingLetters.ai. Elevate your moving business, embrace innovative solutions, and connect deeply with clients. Our cutting-edge approach guarantees satisfaction, blending tradition with contemporary strategies for optimal results.
-      </p>
+      </motion.p>
+
       <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
         {services.map((service, index) => (
-          <ServiceCard key={index} {...service} />
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: index * 0.2 }}
+          >
+            <ServiceCard {...service} />
+          </motion.div>
         ))}
       </div>
     </section>
