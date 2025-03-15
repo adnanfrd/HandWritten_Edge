@@ -18,9 +18,12 @@ export default function NavbarHero() {
     opacity: "0.2"}}></div>
 
       <nav className="absolute top-0 left-0 right-0 flex justify-between items-center px-6 md:px-12 h-[12vh] bg-transparent text-white">
-        <div className="flex items-center space-x-2">
-          <Image src="/logohand.jpg" alt="Logo" width={50} height={50} />
-          <span className="text-lg font-semibold">HandWritten.ai</span>
+        <div >
+          <div className=" flex items-center justify-center"><Image src="/logohand.jpg"  alt="Logo" width={90} height={90} /></div>
+          <span className="text-xl font-semibold italic">Hand<span className=" font-bold italic bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
+  Written.com
+</span>
+</span>
         </div>
 
         <div className="hidden md:flex space-x-6 items-center">
