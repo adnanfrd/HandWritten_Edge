@@ -18,10 +18,10 @@ const PersonalTouch = () => {
 
         <div className="mt-8 flex justify-center">
           <Image
-            src="/tnakyou.webp"
+            src="/thanks.jpg"
             alt="Personal Touch Image"
-            width={600}
-            height={400}
+            width={400}
+            height={300}
             className="rounded-lg shadow-lg object-cover"
           />
         </div>

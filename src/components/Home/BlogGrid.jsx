@@ -8,7 +8,7 @@ const blogPosts = [
       "The moving industry is undergoing a transformation as social media culture shapes customer engagement and brand loyalty.",
     author: "Matthew Young",
     date: "December 12, 2025",
-    image: "/heading1.png",
+    image: "/grid1.jpg",
   },
   {
     title: "Unlock Your Golden Ticket: A Secret Direct Mail Hack",
@@ -24,7 +24,7 @@ const blogPosts = [
       "MovingLetters.ai's latest feature revolutionizes direct mail marketing with AI-driven personalization.",
     author: "Steven Patel",
     date: "April 8, 2025",
-    image: "/heading3.webp",
+    image: "/grid2.jpg",
   },
   {
     title: "Santa’s Secrets to Moving Magic & Special Growth in the Moving Industry",
@@ -40,7 +40,7 @@ const blogPosts = [
       "An insider’s experience with AI-powered automation, personalization, and the future of customer engagement.",
     author: "Matthew Young",
     date: "January 3, 2025",
-    image: "/heading5.webp",
+    image: "/grid3.jpg",
   },
   {
     title: "Crafting the Perfect Message: Tips for Personalizing Your Moving Letters",

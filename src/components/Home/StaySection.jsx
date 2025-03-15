@@ -5,7 +5,6 @@ import { Facebook, Twitter, Instagram, Youtube } from "lucide-react";
 const StaySection = () => {
   return (
     <section className="py-12 px-4 bg-white text-center">
-      {/* Heading Animation */}
       <motion.h2
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}

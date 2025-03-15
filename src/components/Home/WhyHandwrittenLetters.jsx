@@ -42,7 +42,7 @@ const WhyHandwrittenLetters = () => {
 
         <div className="flex justify-center">
           <Image
-            src="/whyletter.webp"
+            src="/handwritten.jpg"
             alt="Handwritten Letter"
             width={500}
             height={500}

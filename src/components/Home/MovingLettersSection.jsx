@@ -42,7 +42,7 @@ const MovingLettersSection = () => {
           className="lg:w-1/2"
         >
           <Image
-            src="/beach-up-above.jpg1-1.webp"
+            src="/beach1.jpg"
             alt="Handwritten Letter with Pen"
             width={600}
             height={400}
