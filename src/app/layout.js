@@ -1,7 +1,6 @@
-import HeroHome from "@/components/Home/HeroHome";
 import "./globals.css";
 import Footer from "@/components/Home/Footer";
-
+import Navbar from "@/components/Home/Navbar";
 
 export const metadata = {
   title: "HandWritten Edge",
@@ -12,7 +11,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <HeroHome/>
+        <Navbar/>
         {children}
         <Footer/>
       </body>

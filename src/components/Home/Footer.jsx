@@ -39,16 +39,16 @@ const Footer = () => {
           <h3 className="text-xl font-semibold italic">Quick Links</h3>
           <ul className="mt-4 space-y-2 text-gray-300">
             <li><a href="#" className="hover:text-white">› Home</a></li>
-            <li><a href="#" className="hover:text-white">› Blog</a></li>
             <li><a href="#" className="hover:text-white">› About Us</a></li>
             <li><a href="#" className="hover:text-white">› Contact Us</a></li>
+            <li><a href="#" className="hover:text-white">› FAQs</a></li>
+
           </ul>
         </div>
 
         <div>
           <h3 className="text-xl font-semibold italic">Important Links</h3>
           <ul className="mt-4 space-y-2 text-gray-300">
-            <li><a href="#" className="hover:text-white">› FAQs</a></li>
             <li><a href="#" className="hover:text-white">› Team</a></li>
             <li><a href="#" className="hover:text-white">› Our Letters</a></li>
             <li><a href="#" className="hover:text-white">› Testimonial</a></li>

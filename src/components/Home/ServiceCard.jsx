@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { damion } from "../AboutUs/fonts";
 
 const ServiceCard = ({ image, title, description }) => {
   return (
@@ -12,7 +13,7 @@ const ServiceCard = ({ image, title, description }) => {
     >
       <Image src={image} alt={title} width={400} height={300} className="w-full" />
       <div className="p-6">
-        <h3 className="text-xl font-semibold italic">{title}</h3>
+        <h3 className={`${damion.className} text-3xl font-semibold italic`}>{title}</h3>
         <p className="mt-2 text-gray-600 text-sm">{description}</p>
       </div>
     </motion.div>

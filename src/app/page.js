@@ -2,6 +2,7 @@ import BlogGrid from "@/components/Home/BlogGrid";
 import ContactSection from "@/components/Home/ContactSection";
 import ElevateSection from "@/components/Home/ElevateSection";
 import FaqSection from "@/components/Home/FaqSection";
+import HeroSection from "@/components/Home/HeroHome";
 import HomeServices from "@/components/Home/HomeServices";
 import MovingLettersSection from "@/components/Home/MovingLettersSection";
 import PersonalTouch from "@/components/Home/PersonalTouch";
@@ -13,6 +14,7 @@ import WhyHandwrittenLetters from "@/components/Home/WhyHandwrittenLetters";
 export default function Home() {
   return (
    <div>
+    <HeroSection/>
     <VideoSection/>
     <HomeServices/>
     <MovingLettersSection/>
