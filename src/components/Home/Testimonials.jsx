@@ -1,49 +1,77 @@
-import Image from "next/image";
+"use client";
+
+import { useEffect, useRef } from "react";
+import { motion } from "framer-motion";
+import gsap from "gsap";
 import { damion } from "../AboutUs/fonts";
 
+const testimonials = [
+  {
+    name: "Austin Yarborough",
+    company: "Central Coast Moving & Storage",
+    quote:
+      "Receiving a handwritten letter evokes emotion that emails can't replicate. MovingLetters.ai amplifies trust. We, as movers, are in the business of memories, transitions, and new beginnings.",
+    image: "/Testimonial-Austin-.webp",
+  },
+  {
+    name: "Nacail Murdock",
+    company: "Murdock’s Moving & Storage",
+    quote:
+      "In the fast-paced world of moving, securing every lead is vital. MovingLetters.ai has been transformative for Murdock’s Moving, revolutionizing our direct mail campaigns and boosting lead generation and sales. It’s a groundbreaking approach.",
+    image: "/Testimonial-Neacail-Murdocks.webp",
+  },
+];
+
 const Testimonials = () => {
-  const testimonials = [
-    {
-      name: "Austin Yarborough",
-      company: "Central Coast Moving & Storage",
-      quote:
-        "Receiving a handwritten letter evokes emotion that emails can't replicate. MovingLetters.ai amplifies trust. We, as movers, are in the business of memories, transitions, and new beginnings.",
-      image: "/Testimonial-Austin-.webp",
-    },
-    {
-      name: "Nacail Murdock",
-      company: "Murdock’s Moving & Storage",
-      quote:
-        "In the fast-paced world of moving, securing every lead is vital. MovingLetters.ai has been transformative for Murdock’s Moving, revolutionizing our direct mail campaigns and boosting lead generation and sales. It’s a groundbreaking approach.",
-      image: "/Testimonial-Neacail-Murdocks.webp",
-    },
-  ];
+  const testimonialRef = useRef([]);
+
+  useEffect(() => {
+    gsap.fromTo(
+      testimonialRef.current,
+      { opacity: 0, y: 50 },
+      { opacity: 1, y: 0, duration: 1, stagger: 0.2, ease: "power3.out" }
+    );
+  }, []);
 
   return (
-    <section className="py-16 px-6 md:px-12 lg:px-20 xl:px-28 bg-white text-center">
-      <h2 className={`${damion.className} text-4xl md:text-7xl font-bold italic text-black`}>
-        Hear From Fellow <span className="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
-        Movers
-          </span>
-      </h2>
-      <p className="text-gray-600 mt-3 text-lg">
+    <section className="py-16 px-6 md:px-12 lg:px-20 xl:px-28 bg-gray-50 text-center">
+      <motion.h2
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        className={`${damion.className} text-4xl md:text-7xl font-bold italic text-black`}
+      >
+        Hear From Fellow{" "}
+        <span className="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
+          Movers
+        </span>
+      </motion.h2>
+      <motion.p
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.2 }}
+        className="text-gray-600 mt-3 text-lg"
+      >
         Discover the difference MovingLetters.ai has made for others in the
         industry. Here’s what fellow movers have to say.
-      </p>
+      </motion.p>
 
       <div className="mt-10 grid md:grid-cols-2 gap-10">
         {testimonials.map((testimonial, index) => (
-          <div
+          <motion.div
             key={index}
-            className="bg-gray-100 rounded-lg p-6 flex flex-col md:flex-row items-center shadow-lg"
+            ref={(el) => (testimonialRef.current[index] = el)}
+            className="relative bg-white rounded-lg p-6 flex flex-col md:flex-row items-center shadow-xl backdrop-blur-lg border border-gray-200"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
+            whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
           >
             <div className="w-28 h-28 md:w-32 md:h-32 rounded-full overflow-hidden border-4 border-white shadow-md">
-              <Image
+              <img
                 src={testimonial.image}
                 alt={testimonial.name}
-                width={128}
-                height={128}
-                className="object-cover"
+                className="object-cover w-full h-full"
               />
             </div>
 
@@ -55,15 +83,20 @@ const Testimonials = () => {
               </p>
               <p className="text-gray-500 text-sm">{testimonial.company}</p>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
 
-      <div className="mt-10">
+      <motion.div
+        className="mt-10"
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.3 }}
+      >
         <button className="bg-black text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-800 transition">
           Learn More
         </button>
-      </div>
+      </motion.div>
     </section>
   );
 };
