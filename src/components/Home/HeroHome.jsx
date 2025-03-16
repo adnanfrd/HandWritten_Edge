@@ -5,38 +5,45 @@ import { damion } from "../AboutUs/fonts";
 const HeroSection = () => {
   return (
     <div className="relative w-full h-screen overflow-hidden">
-      <video autoPlay loop muted className="absolute inset-0 w-full h-full object-cover">
+      {/* Video Background */}
+      <video
+        autoPlay
+        loop
+        muted
+        className="absolute inset-0 w-full h-full object-cover"
+      >
         <source src="/MovingLetters-Christmas-Ad-web.mp4" type="video/mp4" />
       </video>
 
-      <div
-        className="absolute inset-0 bg-opacity-40"
-        style={{ background: "#33293D", opacity: "0.2" }}
-      ></div>
+      {/* Glassmorphism Blur Overlay */}
+      <div className="absolute inset-0 bg-black/50 backdrop-blur-lg"></div>
 
-      <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
+      {/* Content */}
+      <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-6">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className={`${damion.className} text-3xl md:text-8xl font-extrabold italic`}
+          className={`${damion.className} text-4xl md:text-8xl font-extrabold italic leading-tight`}
         >
           Revolutionizing Communication
           <br />
           For Movers
         </motion.h1>
+
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
-          className="mt-4 text-lg md:text-xl max-w-2xl font-medium"
+          className="mt-4 text-lg md:text-xl max-w-3xl font-medium text-gray-200"
         >
           Crafting personal connections through the blend of old-world charm and modern tech.
         </motion.p>
+
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="mt-6 bg-black text-white px-6 py-3 rounded-md text-lg font-semibold"
+          className="mt-6 bg-gradient-to-r from-purple-600 to-pink-500 px-8 py-3 rounded-xl text-lg font-semibold shadow-md hover:shadow-lg transition-all"
         >
           Discover The Magic
         </motion.button>

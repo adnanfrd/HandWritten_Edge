@@ -11,7 +11,7 @@ export default function VideoSection() {
     <div className="flex justify-center items-center min-h-screen bg-gray-100">
       <div className="relative w-[90%] max-w-2xl shadow-lg rounded-lg overflow-hidden">
         <Image
-          src="/video-thumbnail.webp"
+          src="/videothumb.png"
           alt="Video Thumbnail"
           width={800}
           height={450}
