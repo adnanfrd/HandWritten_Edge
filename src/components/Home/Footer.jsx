@@ -1,6 +1,7 @@
 "use client";
 
 import { Facebook, Instagram, Youtube, Twitter, MapPin } from "lucide-react";
+import { damion } from "../AboutUs/fonts";
 
 const Footer = () => {
   return (
@@ -28,7 +29,7 @@ const Footer = () => {
         </div>
 
         <div>
-          <h3 className="text-xl font-semibold italic">Address</h3>
+          <h3 className={`${damion.className} text-4xl font-semibold italic`}>Address</h3>
           <p className="mt-4 flex items-center justify-center md:justify-start text-gray-300">
             <MapPin size={20} className="mr-2 text-gray-400" />
             3110 Boychuck Ave unit 470G, Colorado Springs, CO, 80910
@@ -36,7 +37,7 @@ const Footer = () => {
         </div>
 
         <div>
-          <h3 className="text-xl font-semibold italic">Quick Links</h3>
+          <h3 className={`${damion.className} text-4xl font-semibold italic`}>Quick Links</h3>
           <ul className="mt-4 space-y-2 text-gray-300">
             <li><a href="#" className="hover:text-white">› Home</a></li>
             <li><a href="#" className="hover:text-white">› About Us</a></li>
@@ -47,7 +48,7 @@ const Footer = () => {
         </div>
 
         <div>
-          <h3 className="text-xl font-semibold italic">Important Links</h3>
+          <h3 className={`${damion.className} text-4xl font-semibold italic`}>Important Links</h3>
           <ul className="mt-4 space-y-2 text-gray-300">
             <li><a href="#" className="hover:text-white">› Team</a></li>
             <li><a href="#" className="hover:text-white">› Our Letters</a></li>
