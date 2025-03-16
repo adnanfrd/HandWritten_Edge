@@ -1,13 +1,14 @@
 import Image from "next/image";
 import { Check } from "lucide-react";
+import { damion } from "../AboutUs/fonts";
 
 const WhyHandwrittenLetters = () => {
   return (
     <section className="py-16 px-6 md:px-12 lg:px-20 xl:px-28 bg-white">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div>
-          <h2 className="text-4xl md:text-5xl font-bold italic text-black">
-            Why Handwritten <br /> Letters?
+          <h2 className={`${damion.className} text-4xl md:text-7xl font-bold italic text-black`}>
+            Why Handwritten Letters?
           </h2>
           <p className="text-gray-700 mt-4 text-lg leading-relaxed">
             In our moving world, trust is everything. Think about the impact of receiving a handwritten note in today's digital age. It’s not just old-school; it’s powerful. By adding handwritten letters to our communication strategy, we’re not just moving boxes; we’re building lasting relationships.

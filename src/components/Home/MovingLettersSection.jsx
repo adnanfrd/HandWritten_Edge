@@ -1,23 +1,23 @@
-"use client"; // Ensure it's a client component
+"use client"; 
 
 import Image from "next/image";
-import { motion } from "framer-motion"; // Ensure correct import
+import { motion } from "framer-motion"; 
+import { damion } from "../AboutUs/fonts";
 
 const MovingLettersSection = () => {
   return (
     <section className="py-16 px-6 bg-white">
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center lg:items-start gap-8">
-        {/* Text Content */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="lg:w-1/2 text-center lg:text-left"
         >
-          <h2 className="text-3xl md:text-4xl font-extrabold italic">
+          <h2 className={`${damion.className} text-3xl md:text-5xl font-extrabold italic`}>
             Pioneering The Perfect Blend Of Tradition And Technology
           </h2>
-          <h3 className="mt-6 text-2xl font-semibold italic">
+          <h3 className={`${damion.className} mt-6 text-3xl font-semibold italic`}>
             We Know Moving. We Know Letters.
           </h3>
           <p className="mt-4 text-gray-600 leading-relaxed">
@@ -34,7 +34,6 @@ const MovingLettersSection = () => {
           </motion.button>
         </motion.div>
 
-        {/* Image */}
         <motion.div
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}

@@ -1,3 +1,5 @@
+import { damion } from "../AboutUs/fonts";
+
 const ElevateSection = () => {
     return (
       <section className="relative w-full h-[50vh] flex items-center justify-center text-center text-white">
@@ -9,7 +11,7 @@ const ElevateSection = () => {
         </div>
   
         <div className="relative z-10 max-w-2xl px-4">
-          <h1 className="text-3xl md:text-5xl font-bold italic">
+          <h1 className={`${damion.className} text-4xl md:text-7xl font-bold italic`}>
             Elevate Your Client Communication
           </h1>
           <p className="mt-4 text-lg md:text-xl">
