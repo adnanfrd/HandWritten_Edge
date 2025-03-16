@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { Plus, Minus } from "lucide-react";
+import { damion } from "../AboutUs/fonts";
 
 const faqsLeft = [
   {
@@ -58,8 +59,10 @@ const FaqSection = () => {
   return (
     <section className="py-16 bg-white">
       <div className="max-w-6xl mx-auto px-6">
-        <h2 className="text-3xl md:text-4xl font-bold text-center italic text-black mb-4">
-          Frequently Asked Questions
+        <h2 className={`${damion.className} text-4xl md:text-7xl font-bold text-center italic text-black mb-4 `}>
+          Frequently Asked  <span className="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
+          Questions
+          </span>
         </h2>
         <p className="text-center text-gray-600 max-w-3xl mx-auto mb-10">
         Navigating the world of handwritten robotic letters might feel like venturing into uncharted waters. We totally get it. That’s why we’ve curated this section to answer some of the burning questions you might have about our services. Dive into the nuances, understand the behind-the-scenes magic, and discover the passion and precision we pour into every letter. These FAQs are your gateway to understanding how MovingLetters.ai is revolutionizing communication for movers, one handwritten note at a time        </p>

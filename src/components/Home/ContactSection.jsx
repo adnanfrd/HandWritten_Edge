@@ -1,5 +1,7 @@
 "use client";
 
+import { damion } from "../AboutUs/fonts";
+
 const ContactSection = () => {
   return (
     <section
@@ -15,9 +17,9 @@ const ContactSection = () => {
     opacity: "0.75"}}></div>
 
       <div className="relative z-10">
-        <h2 className="text-3xl md:text-5xl font-semibold italic">Still Have Some Questions?</h2>
-        <p className="text-3xl md:text-5xl mt-4 font-semibold  italic">Contact Us.</p>
-
+        <h2 className={`${damion.className} text-4xl md:text-7xl font-semibold italic`}>Still Have Some <span className="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
+        Questions?
+          </span><br /> Contact Us.</h2>
         <button className="mt-6 px-6 py-3 bg-black text-white text-lg font-semibold rounded-md hover:bg-opacity-80 transition">
           Contact Us
         </button>

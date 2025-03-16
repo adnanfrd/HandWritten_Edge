@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { damion } from "../AboutUs/fonts";
 
 const Testimonials = () => {
   const testimonials = [
@@ -20,8 +21,10 @@ const Testimonials = () => {
 
   return (
     <section className="py-16 px-6 md:px-12 lg:px-20 xl:px-28 bg-white text-center">
-      <h2 className="text-4xl md:text-5xl font-bold italic text-black">
-        Hear From Fellow Movers
+      <h2 className={`${damion.className} text-4xl md:text-7xl font-bold italic text-black`}>
+        Hear From Fellow <span className="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
+        Movers
+          </span>
       </h2>
       <p className="text-gray-600 mt-3 text-lg">
         Discover the difference MovingLetters.ai has made for others in the
