@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { ChevronDown, Search } from "lucide-react";
+import { damion } from "../AboutUs/fonts";
 
 const faqs = [
   { question: "Why handwritten letters? Aren’t digital methods more efficient?", answer: "Handwritten letters add a personal touch that digital methods lack, making communication more heartfelt and memorable." },
@@ -29,7 +30,7 @@ const FAQSection = () => {
     <section className="min-h-[115vh] flex flex-col items-center justify-center bg-gray-50 px-6 py-16">
       {/* Header */}
       <motion.h1
-        className="text-3xl sm:text-6xl font-extrabold text-gray-800 mb-6 italic text-center"
+        className={`${damion.className} text-3xl sm:text-6xl font-extrabold text-gray-800 mb-6 italic text-center`}
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
