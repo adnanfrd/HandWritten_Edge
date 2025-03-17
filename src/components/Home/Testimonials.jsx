@@ -7,18 +7,18 @@ import { damion } from "../AboutUs/fonts";
 
 const testimonials = [
   {
-    name: "Austin Yarborough",
+    name: "Emily Carter",
     company: "Central Coast Moving & Storage",
     quote:
       "Receiving a handwritten letter evokes emotion that emails can't replicate. HandWritten.com amplifies trust. We, as movers, are in the business of memories, transitions, and new beginnings.",
-    image: "/Testimonial-Austin-.webp",
+    image: "/testimonial1.jpeg",
   },
   {
-    name: "Nacail Murdock",
+    name: "James Bennett",
     company: "Murdock’s Moving & Storage",
     quote:
       "In the fast-paced world of moving, securing every lead is vital. HandWritten.com has been transformative for Murdock’s Moving, revolutionizing our direct mail campaigns and boosting lead generation and sales. It’s a groundbreaking approach.",
-    image: "/Testimonial-Neacail-Murdocks.webp",
+    image: "/testimonial2.jpeg",
   },
 ];
 

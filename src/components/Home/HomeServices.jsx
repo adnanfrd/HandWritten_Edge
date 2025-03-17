@@ -7,19 +7,19 @@ import { damion } from "../AboutUs/fonts";
 const HomeServices = () => {
   const services = [
     {
-      image: "/ser1.jpg",
+      image: "/s1.png",
       title: "Old-School Mail with Cutting-Edge Technology:",
       description:
         "While most movers send generic postcards, elevate your brand with handwritten letters. Stand apart in a crowded industry and make an impression that counts.",
     },
     {
-      image: "/ser2.jpg",
+      image: "/s2.png",
       title: "Unforgettable First Impressions:",
       description:
         "Size matters in making an impression. With our customizable 5×7 cards, let your brand stand out uniquely in a crowd. Tailored for movers, these premium cards ensure lasting impact.",
     },
     {
-      image: "/ser3.jpg",
+      image: "/s3.png",
       title: "Tired of Returned Mail? We Were Too.",
       description:
         "Ever sent postcards that came back undelivered? MoveCleanse, our cloud-based tool, meticulously verifies listings to prevent wasted time and mail.",
