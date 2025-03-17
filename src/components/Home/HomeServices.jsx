@@ -51,7 +51,7 @@ const HomeServices = () => {
         transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
         className="mt-2 text-gray-600 max-w-2xl mx-auto"
       >
-        Experience unmatched efficiency with MovingLetters.ai. Elevate your moving business, embrace innovative solutions, and connect deeply with clients.
+        Experience unmatched efficiency with HandWritten.com. Elevate your moving business, embrace innovative solutions, and connect deeply with clients.
       </motion.p>
 
       {/* Service Cards Grid */}

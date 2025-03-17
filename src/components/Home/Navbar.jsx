@@ -9,6 +9,13 @@ import { motion, AnimatePresence } from "framer-motion";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const navLinks = [
+    { name: "Home", path: "/" },
+    { name: "About Us", path: "/about" },
+    { name: "FAQs", path: "/faqs" },
+    { name: "Our Letters", path: "/letters" },
+  ];
+
   return (
     <motion.nav
       initial={{ y: -50, opacity: 0 }}
@@ -30,9 +37,9 @@ const Navbar = () => {
 
         {/* Desktop Links */}
         <div className="hidden md:flex space-x-6 text-white font-semibold text-lg">
-          {["Home", "About Us", "FAQs", "Our Letters"].map((item, index) => (
-            <Link key={index} href="#" className="hover:text-purple-300 transition-all duration-300">
-              {item}
+          {navLinks.map(({ name, path }) => (
+            <Link key={name} href={path} className="hover:text-purple-300 transition-all duration-300">
+              {name}
             </Link>
           ))}
           <motion.button
@@ -40,7 +47,7 @@ const Navbar = () => {
             whileTap={{ scale: 0.95 }}
             className="bg-white text-black px-5 py-2 rounded-lg shadow-md hover:bg-gray-200 transition-all"
           >
-            Contact Us
+            <Link href="/contact">Contact Us</Link>
           </motion.button>
         </div>
 
@@ -60,14 +67,14 @@ const Navbar = () => {
             transition={{ duration: 0.4, ease: "easeInOut" }}
             className="absolute top-[12vh] left-0 w-full bg-[#000000F2] backdrop-blur-lg flex flex-col items-center py-6 space-y-5 md:hidden"
           >
-            {["Home", "About Us", "Blog", "FAQs", "Our Letters"].map((item, index) => (
+            {navLinks.map(({ name, path }) => (
               <Link
-                key={index}
-                href="#"
+                key={name}
+                href={path}
                 className="text-white text-lg font-medium hover:text-purple-300 transition-all"
                 onClick={() => setIsOpen(false)}
               >
-                {item}
+                {name}
               </Link>
             ))}
             <motion.button
@@ -76,7 +83,7 @@ const Navbar = () => {
               className="bg-white text-black px-6 py-2 rounded-md shadow-md hover:bg-gray-200 transition-all"
               onClick={() => setIsOpen(false)}
             >
-              Contact Us
+              <Link href="/contact">Contact Us</Link>
             </motion.button>
           </motion.div>
         )}

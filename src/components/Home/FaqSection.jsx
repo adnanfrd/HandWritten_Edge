@@ -8,7 +8,7 @@ import { damion } from "../AboutUs/fonts";
 
 const faqsLeft = [
   { question: "Why handwritten letters? Aren't digital methods more efficient?", answer: "Handwritten letters evoke emotions and build trust better than digital messages." },
-  { question: "How does the AI in MovingLetters.ai work?", answer: "Our AI automates handwriting in a personalized and scalable way." },
+  { question: "How does the AI in HandWritten.com work?", answer: "Our AI automates handwriting in a personalized and scalable way." },
   { question: "Can I personalize the letters further?", answer: "Yes, you can add custom messages, signatures, and branding." },
   { question: "Will the letters really be different every time?", answer: "Absolutely! Our AI ensures each letter has unique handwriting variations." },
   { question: "Is there a limit to how many letters I can send out?", answer: "There are no hard limits. You can scale your outreach as needed." },
@@ -18,7 +18,7 @@ const faqsRight = [
   { question: "Are there any limitations to what can be written?", answer: "You can write almost anything, but we ensure ethical use." },
   { question: "What makes your service exclusive in the market?", answer: "Our AI-driven, human-like handwritten letters set us apart." },
   { question: "How can I get started?", answer: "Simply sign up, create your letter, and let our AI do the rest." },
-  { question: "What sets MovingLetters.ai apart from other marketing services?", answer: "We focus on personalization, emotional impact, and automation." },
+  { question: "What sets HandWritten.com apart from other marketing services?", answer: "We focus on personalization, emotional impact, and automation." },
   { question: "I'm concerned about data privacy. How do you handle our data?", answer: "We follow strict security protocols to protect user data." },
 ];
 
@@ -60,7 +60,7 @@ const FaqSection = () => {
         >
           Navigating the world of handwritten robotic letters might feel like venturing into uncharted waters. 
           We totally get it. That’s why we’ve curated this section to answer some of the burning questions you might have about our services. 
-          These FAQs are your gateway to understanding how MovingLetters.ai is revolutionizing communication for movers, one handwritten note at a time.
+          These FAQs are your gateway to understanding how HandWritten.com is revolutionizing communication for movers, one handwritten note at a time.
         </motion.p>
 
         <div className="grid md:grid-cols-2 gap-8">

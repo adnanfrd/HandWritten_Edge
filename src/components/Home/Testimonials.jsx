@@ -10,14 +10,14 @@ const testimonials = [
     name: "Austin Yarborough",
     company: "Central Coast Moving & Storage",
     quote:
-      "Receiving a handwritten letter evokes emotion that emails can't replicate. MovingLetters.ai amplifies trust. We, as movers, are in the business of memories, transitions, and new beginnings.",
+      "Receiving a handwritten letter evokes emotion that emails can't replicate. HandWritten.com amplifies trust. We, as movers, are in the business of memories, transitions, and new beginnings.",
     image: "/Testimonial-Austin-.webp",
   },
   {
     name: "Nacail Murdock",
     company: "Murdock’s Moving & Storage",
     quote:
-      "In the fast-paced world of moving, securing every lead is vital. MovingLetters.ai has been transformative for Murdock’s Moving, revolutionizing our direct mail campaigns and boosting lead generation and sales. It’s a groundbreaking approach.",
+      "In the fast-paced world of moving, securing every lead is vital. HandWritten.com has been transformative for Murdock’s Moving, revolutionizing our direct mail campaigns and boosting lead generation and sales. It’s a groundbreaking approach.",
     image: "/Testimonial-Neacail-Murdocks.webp",
   },
 ];
@@ -52,7 +52,7 @@ const Testimonials = () => {
         transition={{ duration: 0.8, delay: 0.2 }}
         className="text-gray-600 mt-3 text-lg"
       >
-        Discover the difference MovingLetters.ai has made for others in the
+        Discover the difference HandWritten.com has made for others in the
         industry. Here’s what fellow movers have to say.
       </motion.p>
 
