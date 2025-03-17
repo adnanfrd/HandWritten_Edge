@@ -8,7 +8,6 @@ const MovingLettersSection = () => {
   return (
     <section className="relative py-20 px-6 bg-gradient-to-b from-white to-gray-100 overflow-hidden">
       {/* Decorative Background */}
-      <div className="absolute inset-0 bg-[url('/texture-bg.webp')] bg-cover opacity-10"></div>
 
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center lg:items-start gap-12 relative z-10">
         {/* Left Content */}

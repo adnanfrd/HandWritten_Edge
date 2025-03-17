@@ -69,7 +69,6 @@ const WhyHandwrittenLetters = () => {
       className="relative py-20 px-6 md:px-12 lg:px-20 xl:px-28 bg-gradient-to-b from-gray-50 to-white"
     >
       {/* Background Overlay */}
-      <div className="absolute inset-0 bg-[url('/texture-bg.webp')] bg-cover opacity-10"></div>
 
       <div className="relative z-10 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Content Section */}

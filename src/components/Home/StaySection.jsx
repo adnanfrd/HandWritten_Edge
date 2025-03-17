@@ -15,7 +15,6 @@ const StaySection = () => {
   return (
     <section className="relative py-16 px-6 bg-gradient-to-b from-white to-gray-100 text-center overflow-hidden">
       {/* Subtle Background Texture */}
-      <div className="absolute inset-0 bg-[url('/texture-bg.webp')] bg-cover opacity-10"></div>
 
       <motion.h2
         initial={{ opacity: 0, y: -20 }}

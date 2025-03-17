@@ -35,7 +35,6 @@ const PersonalTouch = () => {
       className="relative py-20 px-6 md:px-12 lg:px-20 xl:px-28 bg-gradient-to-b from-white to-gray-100"
     >
       {/* Background Overlay */}
-      <div className="absolute inset-0 bg-[url('/texture-bg.webp')] bg-cover opacity-10"></div>
 
       <div className="relative z-10 max-w-4xl mx-auto text-center">
         {/* Heading */}
