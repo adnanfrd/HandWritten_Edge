@@ -6,7 +6,6 @@ const AboutUs = () => {
   return (
     <section className="relative w-full flex items-center min-h-[100vh] bg-gradient-to-br from-gray-100 to-gray-200 py-20 px-6 md:px-12 overflow-hidden">
       {/* Background Elements */}
-      <div className="absolute inset-0 bg-[url('/background-pattern.svg')] opacity-10"></div>
       <div className="absolute top-10 left-10 w-20 h-20 bg-purple-500 opacity-20 rounded-full blur-3xl animate-pulse"></div>
       <div className="absolute bottom-10 right-10 w-24 h-24 bg-pink-500 opacity-20 rounded-full blur-3xl animate-pulse"></div>
 

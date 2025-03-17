@@ -53,7 +53,7 @@ const MovingLettersSection = () => {
         >
           <div className="relative overflow-hidden rounded-xl shadow-xl">
             <Image
-              src="/beach1.jpg"
+              src="/w4.jpg"
               alt="Handwritten Letter with Pen"
               width={600}
               height={400}

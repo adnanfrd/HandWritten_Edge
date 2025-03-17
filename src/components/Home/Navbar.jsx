@@ -38,14 +38,15 @@ const Navbar = () => {
         {/* Desktop Links */}
         <div className="hidden md:flex space-x-6 text-white font-semibold text-lg">
           {navLinks.map(({ name, path }) => (
-            <Link key={name} href={path} className="hover:text-purple-300 transition-all duration-300">
+            <Link key={name} href={path} className="hover:bg-gradient-to-r hover:from-purple-500 hover:to-pink-500 
+             hover:bg-clip-text hover:text-transparent italic transition-all duration-300">
               {name}
             </Link>
           ))}
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="bg-white text-black px-5 py-2 rounded-lg shadow-md hover:bg-gray-200 transition-all"
+            className="bg-white text-black px-5 py-2 rounded-lg shadow-md italic hover:bg-gradient-to-r from-purple-500 to-pink-500 hover:text-white transition-all"
           >
             <Link href="/contact">Contact Us</Link>
           </motion.button>

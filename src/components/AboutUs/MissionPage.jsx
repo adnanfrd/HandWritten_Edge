@@ -109,7 +109,7 @@ const MissionPage = () => {
           className="overflow-hidden rounded-lg shadow-lg"
         >
           <Image
-            src="/mission1.webp"
+            src="/w6.jpg"
             alt="Mission Image 1"
             width={600}
             height={400}
@@ -123,7 +123,7 @@ const MissionPage = () => {
           className="overflow-hidden rounded-lg shadow-lg"
         >
           <Image
-            src="/mission2.webp"
+            src="/w7.jpg"
             alt="Mission Image 2"
             width={600}
             height={400}

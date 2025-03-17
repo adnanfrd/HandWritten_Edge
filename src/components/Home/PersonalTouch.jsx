@@ -78,7 +78,7 @@ const PersonalTouch = () => {
           whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
         >
           <img
-            src="/thanks.jpg"
+            src="/w7.jpg"
             alt="Personal Touch Image"
             className="rounded-xl shadow-lg object-cover border-4 border-white"
             width={400}

@@ -5,18 +5,18 @@ import { damion } from "../AboutUs/fonts";
 const HeroSection = () => {
   return (
     <div className="relative w-full h-screen overflow-hidden">
-      {/* Video Background */}
-      <video
-        autoPlay
-        loop
-        muted
+      {/* ✅ Embedded YouTube Video */}
+      <iframe
         className="absolute inset-0 w-full h-full object-cover"
-      >
-        <source src="/MovingLetters-Christmas-Ad-web.mp4" type="video/mp4" />
-      </video>
+        src="https://www.youtube.com/embed/We_v0tJ0qHI?autoplay=1&loop=1&mute=1&controls=0&playlist=We_v0tJ0qHI"
+        title="YouTube Video"
+        frameBorder="0"
+        allow="autoplay; fullscreen; encrypted-media"
+        allowFullScreen
+      ></iframe>
 
       {/* Glassmorphism Blur Overlay */}
-      <div className="absolute inset-0 bg-black/50 backdrop-blur-lg"></div>
+      <div className="absolute inset-0 bg-black/10 backdrop-blur-lg"></div>
 
       {/* Content */}
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-6">
