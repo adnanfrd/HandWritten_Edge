@@ -27,7 +27,7 @@ const FAQSection = () => {
   );
 
   return (
-    <section className="min-h-[115vh] flex flex-col items-center justify-center bg-gray-50 px-6 py-16">
+    <section className="min-h-[130vh] flex flex-col items-center justify-center bg-gray-50 px-6 py-16">
       {/* Header */}
       <motion.h1
         className={`${damion.className} text-3xl sm:text-6xl font-extrabold text-gray-800 mb-6 italic text-center`}
