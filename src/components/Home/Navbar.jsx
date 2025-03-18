@@ -24,22 +24,24 @@ const Navbar = () => {
       className="fixed top-0 left-0 w-full bg-[#022252CC] backdrop-blur-md bg-opacity-90 z-50 shadow-lg"
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center h-[12vh]">
-        {/* Logo */}
         <Link href="/" className="flex items-center space-x-2">
-          <Image src="/logohand.jpg" alt="Logo" width={60} height={60} className="rounded-full" />
-          <span className="text-xl font-semibold italic text-white">
-            Hand
-            <span className="font-bold italic bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
-              Written.com
-            </span>
-          </span>
+          <Image
+            src="/logohand.jpg"
+            alt="Logo"
+            width={150}
+            height={150}
+            className="rounded-full object-cover"
+          />
         </Link>
 
-        {/* Desktop Links */}
         <div className="hidden md:flex space-x-6 text-white font-semibold text-lg">
           {navLinks.map(({ name, path }) => (
-            <Link key={name} href={path} className="hover:bg-gradient-to-r hover:from-purple-500 hover:to-pink-500 
-             hover:bg-clip-text hover:text-transparent italic transition-all duration-300">
+            <Link
+              key={name}
+              href={path}
+              className="hover:bg-gradient-to-r hover:from-purple-500 hover:to-pink-500 
+             hover:bg-clip-text hover:text-transparent italic transition-all duration-300"
+            >
               {name}
             </Link>
           ))}
@@ -53,7 +55,10 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Menu Button */}
-        <button className="md:hidden text-white" onClick={() => setIsOpen(!isOpen)}>
+        <button
+          className="md:hidden text-white"
+          onClick={() => setIsOpen(!isOpen)}
+        >
           {isOpen ? <X size={30} /> : <Menu size={30} />}
         </button>
       </div>

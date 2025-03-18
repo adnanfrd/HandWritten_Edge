@@ -7,14 +7,14 @@ import MovingLettersSection from "@/components/Home/MovingLettersSection";
 import PersonalTouch from "@/components/Home/PersonalTouch";
 import StaySection from "@/components/Home/StaySection";
 import Testimonials from "@/components/Home/Testimonials";
-import VideoSection from "@/components/Home/VideoSection";
+// import VideoSection from "@/components/Home/VideoSection";
 import WhyHandwrittenLetters from "@/components/Home/WhyHandwrittenLetters";
 
 export default function Home() {
   return (
    <div>
     <HeroSection/>
-    <VideoSection/>
+    {/* <VideoSection/> */}
     <HomeServices/>
     <MovingLettersSection/>
     <StaySection/>

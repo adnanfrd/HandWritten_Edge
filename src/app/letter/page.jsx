@@ -1,5 +1,5 @@
 
-import VideoSection from '@/components/Home/VideoSection'
+// import VideoSection from '@/components/Home/VideoSection'
 import AutoCarousel from '@/components/letter/AutoCarousel'
 import Impression from '@/components/letter/Impression'
 import InkGrid from '@/components/letter/InkGrid'
@@ -12,7 +12,7 @@ const page = () => {
   return (
     <div>
       <OurLettersSection/>
-      <VideoSection/>
+      {/* <VideoSection/> */}
       <AutoCarousel/>
       <InkGrid/>
       <SignatureStroke/>
