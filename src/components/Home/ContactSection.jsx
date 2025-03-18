@@ -36,7 +36,7 @@ const ContactSection = () => {
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="mt-6 px-8 py-3 bg-gradient-to-r from-purple-600 to-pink-500 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all"
+          className="mt-6 px-8 bg-black cursor-pointer py-3 hover:bg-gradient-to-r from-[#001F3F] to-[#00509E] text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all"
         >
           Contact Us
         </motion.button>

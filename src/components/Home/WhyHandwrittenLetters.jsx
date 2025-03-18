@@ -5,6 +5,7 @@ import { Check } from "lucide-react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { damion } from "../AboutUs/fonts";
+import Link from "next/link";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -107,10 +108,11 @@ const WhyHandwrittenLetters = () => {
             ))}
           </div>
 
-          {/* Button with Hover Effect */}
-          <button className="mt-6 px-6 py-3 bg-black text-white font-semibold rounded-lg hover:bg-gray-800 transition transform hover:scale-105 shadow-md">
+          <Link href="/handwritten-letters">
+          <button className="mt-6 px-6 py-3 hover:cursor-pointer bg-black  text-white font-semibold rounded-lg hover:bg-gradient-to-r from-[#001F3F] to-[#00509E] transition transform hover:scale-105 shadow-md">
             Learn More
           </button>
+          </Link>
         </div>
 
         {/* Image with Hover & Animation */}

@@ -129,7 +129,7 @@ const FaqSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
         >
-          <button className="px-6 py-3 bg-indigo-600 text-white font-semibold rounded-lg shadow-md hover:bg-indigo-700 transition">
+          <button className="px-6 py-3 bg-black cursor-pointer text-white font-semibold rounded-lg shadow-md hover:bg-gradient-to-r from-[#001F3F] to-[#00509E] transition">
             View More
           </button>
         </motion.div>

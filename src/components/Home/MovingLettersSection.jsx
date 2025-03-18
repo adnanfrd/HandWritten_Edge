@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { damion } from "../AboutUs/fonts";
+import Link from "next/link";
 
 const MovingLettersSection = () => {
   return (
@@ -38,15 +39,15 @@ const MovingLettersSection = () => {
             handwritten letters and supercharged it with technology to ensure
             your business stands out and leaves a lasting impression.
           </p>
-
-          {/* Call-to-Action Button */}
+           <Link href="/about">
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="mt-6 px-8 py-3 bg-gradient-to-r from-purple-600 to-pink-500 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all"
+            className="mt-6 px-8 py-3 cursor-pointer bg-black hover:bg-gradient-to-r from-[#001F3F] to-[#00509E]  text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all"
           >
             Read More
           </motion.button>
+          </Link>
         </motion.div>
 
         {/* Right Image */}

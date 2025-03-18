@@ -45,7 +45,7 @@ const HeroSection = () => {
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="mt-6 bg-gradient-to-r hover:cursor-pointer from-purple-600 to-pink-500 px-8 py-3 rounded-xl text-lg font-semibold shadow-md hover:shadow-lg transition-all"
+          className="mt-6 hover:cursor-pointer bg-black hover:bg-gradient-to-r from-[#001F3F] to-[#00509E]  px-8 py-3 rounded-xl text-lg font-semibold shadow-md hover:shadow-lg transition-all"
         >
           Discover The Magic
         </motion.button>
