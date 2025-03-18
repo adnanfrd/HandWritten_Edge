@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import gsap from "gsap";
 import { damion } from "../AboutUs/fonts";
+import Link from "next/link";
 
 const testimonials = [
   {
@@ -93,9 +94,11 @@ const Testimonials = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.3 }}
       >
+        <Link href="/testimonial">
         <button className="bg-black text-white cursor-pointer px-6 py-3 rounded-lg font-semibold hover:bg-gradient-to-r from-[#001F3F] to-[#00509E] transition">
           Learn More
         </button>
+        </Link>
       </motion.div>
     </section>
   );
