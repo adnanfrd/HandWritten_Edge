@@ -39,19 +39,21 @@ const Navbar = () => {
             <Link
               key={name}
               href={path}
-              className="hover:bg-gradient-to-r hover:from-purple-500 hover:to-pink-500 
-             hover:bg-clip-text hover:text-transparent italic transition-all duration-300"
+              className="hover:bg-gradient-to-r from-[#001F3F] to-[#00509E] hover:text-white 
+             hover:bg-clip-text hover:scale-120 italic transition-all duration-300"
             >
               {name}
             </Link>
           ))}
+          <Link href="/contact">
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="bg-white text-black px-5 py-2 rounded-lg shadow-md italic hover:bg-gradient-to-r from-purple-500 to-pink-500 hover:text-white transition-all"
+            className="bg-white text-black hover:cursor-pointer px-5 py-2 rounded-lg shadow-md italic hover:bg-gradient-to-r from-[#001F3F] to-[#3d7bb9]  hover:text-white transition-all"
           >
-            <Link href="/contact">Contact Us</Link>
+            Contact Us
           </motion.button>
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -86,7 +88,7 @@ const Navbar = () => {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-white text-black px-6 py-2 rounded-md shadow-md hover:bg-gray-200 transition-all"
+              className="bg-white text-black px-6 py-2 rounded-md shadow-md hover:bg-gradient-to-r from-[#001F3F] to-[#00509E] transition-all"
               onClick={() => setIsOpen(false)}
             >
               <Link href="/contact">Contact Us</Link>
