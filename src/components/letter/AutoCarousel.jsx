@@ -34,7 +34,7 @@ const Carousel = ({ items }) => {
 
   return (
     <div className="relative w-full max-w-4xl mx-auto overflow-hidden">
-        <h2 className={`${damion.className} p-5 text-center text-4xl md:text-7xl`}>Fonts That Tell  <span className="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">Your Story</span></h2>
+        <h2 className={`${damion.className} p-5 text-center text-4xl md:text-7xl`}>Fonts That Tell  <span className="bg-gradient-to-r from-[#001F3F] to-[#00509E] bg-clip-text text-transparent">Your Story</span></h2>
       <div className="flex w-full" ref={carouselRef}>
         {items.map((item) => (
           <div key={item.id} className="min-w-full flex justify-center">

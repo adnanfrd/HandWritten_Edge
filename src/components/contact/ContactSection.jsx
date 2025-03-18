@@ -19,7 +19,7 @@ const ContactSection = () => {
           transition={{ duration: 0.8 }}
         >
           Join Our{" "}
-          <span className="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-[#001F3F] to-[#00509E] bg-clip-text text-transparent">
             Moving Letters
           </span>{" "}
           Journey!!
@@ -53,7 +53,7 @@ const ContactSection = () => {
               key={index}
               href={link}
               aria-label={label}
-              className="p-3 rounded-full bg-gray-800 text-white hover:bg-purple-500 transition-all duration-300"
+              className="p-3 rounded-full bg-gray-800 text-white hover:bg-gradient-to-r from-[#001F3F] to-[#00509E] transition-all duration-300"
             >
               <Icon className="w-6 h-6" />
             </a>

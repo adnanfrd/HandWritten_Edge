@@ -2,6 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { damion } from "../AboutUs/fonts";
+import Link from "next/link";
 
 
 const PlansSection = () => {
@@ -19,9 +20,11 @@ const PlansSection = () => {
             <p className="text-gray-600 text-center mt-2">
               Great features included with every type of pricing
             </p>
-            <button className="mt-4 px-6 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition">
+            <Link href="/contact">
+            <button className="mt-4 px-6 py-2 cursor-pointer bg-black text-white rounded-lg hover:bg-gradient-to-r from-[#001F3F] to-[#00509E]  transition">
               Contact Us
             </button>
+            </Link>
           </motion.div>
   
           {/* Right - Features List */}

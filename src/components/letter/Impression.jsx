@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { damion } from "../AboutUs/fonts";
+import Link from "next/link";
 
 const Impression = () => {
   return (
@@ -29,10 +30,11 @@ const Impression = () => {
           transition={{ duration: 1, delay: 0.5 }}
           className="mt-4 mx-auto border-t-2 border-white"
         ></motion.div>
-
-        <button className="mt-6 px-6 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition">
+        <Link href="/contact">
+        <button className="mt-6 px-6 py-2 cursor-pointer bg-black text-white rounded-lg hover:bg-gradient-to-r from-[#001F3F] to-[#00509E] transition">
           Contact Us
         </button>
+        </Link>
       </motion.div>
     </div>
   );

@@ -70,7 +70,7 @@ export default function OurLettersSection() {
         <h1
           className={`${damion.className} text-4xl md:text-7xl font-extrabold italic leading-tight text-gray-900`}
         >
-          Our <span className="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">Letters</span>
+          Our <span className="bg-gradient-to-r from-[#001F3F] to-[#00509E] bg-clip-text text-transparent">Letters</span>
         </h1>
         <h2 className="text-lg md:text-xl font-bold text-gray-700 mt-2">
           Unfolding Personal Connection in Every Stroke
