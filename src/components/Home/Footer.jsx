@@ -2,11 +2,13 @@
 
 import { Facebook, Instagram, Youtube, Twitter, MapPin } from "lucide-react";
 import { damion } from "../AboutUs/fonts";
+import Link from "next/link";
 
 const Footer = () => {
   return (
     <footer className="bg-[#0A043C] text-white py-16 px-6">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 text-center md:text-left">
+        
         {/* Logo & About */}
         <div>
           <img src="/logohand.jpg" alt="MovingLetters.ai" className="mx-auto md:mx-0 h-14" />
@@ -42,11 +44,15 @@ const Footer = () => {
         <div>
           <h3 className={`${damion.className} text-3xl font-semibold italic`}>Quick Links</h3>
           <ul className="mt-4 space-y-3 text-gray-400">
-            {["Home", "About Us", "Contact Us", "FAQs"].map((item, index) => (
+            {[
+              { name: "Home", link: "/" },
+              { name: "About Us", link: "/about" },
+              { name: "FAQs", link: "/faqs" }
+            ].map((item, index) => (
               <li key={index}>
-                <a href="#" className="hover:text-white hover:pl-2 transition-all duration-300">
-                  › {item}
-                </a>
+                <Link href={item.link} className="hover:text-white hover:pl-2 transition-all duration-300">
+                  › {item.name}
+                </Link>
               </li>
             ))}
           </ul>
@@ -56,11 +62,15 @@ const Footer = () => {
         <div>
           <h3 className={`${damion.className} text-3xl font-semibold italic`}>Important Links</h3>
           <ul className="mt-4 space-y-3 text-gray-400">
-            {["Team", "Our Letters", "Testimonial"].map((item, index) => (
+            {[
+              { name: "Contact Us", link: "/contact" },
+              { name: "Testimonial", link: "/testimonial" },
+              { name: "Our Letters", link: "/letter" }
+            ].map((item, index) => (
               <li key={index}>
-                <a href="#" className="hover:text-white hover:pl-2 transition-all duration-300">
-                  › {item}
-                </a>
+                <Link href={item.link} className="hover:text-white hover:pl-2 transition-all duration-300">
+                  › {item.name}
+                </Link>
               </li>
             ))}
           </ul>
