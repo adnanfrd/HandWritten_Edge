@@ -36,7 +36,7 @@ const FAQSection = () => {
         transition={{ duration: 0.8 }}
       >
         Frequently Asked{" "}
-        <span className="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
+        <span className="bg-gradient-to-r from-[#001F3F] to-[#00509E] bg-clip-text text-transparent">
           Questions
         </span>
       </motion.h1>

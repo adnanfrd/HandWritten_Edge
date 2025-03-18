@@ -55,7 +55,7 @@ const SocialPage = () => {
         transition={{ duration: 1, ease: "easeOut" }}
         className={`${damion.className} text-4xl md:text-7xl font-bold text-white mb-10`}
       >
-        Follow <span className="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent drop-shadow-lg">
+        Follow <span className="bg-gradient-to-r from-[#001F3F] to-[#00509E] bg-clip-text text-transparent drop-shadow-lg">
              Us
           </span>
       </motion.h2>

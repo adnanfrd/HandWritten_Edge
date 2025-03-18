@@ -5,6 +5,7 @@ import Image from "next/image";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { damion } from "./fonts";
+import Link from "next/link";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -66,7 +67,7 @@ const TeamPage = () => {
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
         Behind The{" "}
-        <span className="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
+        <span className="bg-gradient-to-r from-[#001F3F] to-[#00509E] bg-clip-text text-transparent">
           Magic
         </span>
       </motion.h1>
@@ -111,9 +112,11 @@ const TeamPage = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.3 }}
       >
-        <button className="bg-black text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-800 transition">
+        <Link href="/team">
+        <button className="bg-black cursor-pointer text-white px-6 py-3 rounded-lg font-semibold hover:bg-gradient-to-r from-[#001F3F] to-[#00509E] transition">
           View More
         </button>
+        </Link>
       </motion.div>
     </div>
   );

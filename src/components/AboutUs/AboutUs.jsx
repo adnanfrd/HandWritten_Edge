@@ -22,7 +22,7 @@ const AboutUs = () => {
           transition={{ delay: 0.3, duration: 0.6 }}
           className={`${damion.className} text-5xl md:text-7xl font-bold italic text-gray-900 relative`}
         >
-          About <span className="text-purple-600 drop-shadow-lg">Us</span>
+          About <span className="bg-gradient-to-r from-[#001F3F] to-[#00509E] bg-clip-text text-transparent">Us</span>
         </motion.h2>
 
         {/* Description */}
@@ -62,7 +62,7 @@ const AboutUs = () => {
           transition={{ delay: 0.7, duration: 0.8 }}
           className="mt-8 flex justify-center"
         >
-          <div className="h-2 w-32 bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 rounded-full shadow-lg"></div>
+          <div className="h-2 w-32 bg-gradient-to-r from-[#001F3F] to-[#00509E] rounded-full shadow-lg"></div>
         </motion.div>
       </motion.div>
     </section>

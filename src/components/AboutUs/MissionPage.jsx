@@ -52,7 +52,7 @@ const MissionPage = () => {
           className={`${damion.className} text-5xl md:text-7xl font-bold italic relative`}
         >
           Our Company{" "}
-          <span className="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent drop-shadow-lg">
+          <span className="bg-gradient-to-r from-[#001F3F] to-[#00509E] bg-clip-text text-transparent drop-shadow-lg">
             Mission
           </span>
         </motion.h2>
