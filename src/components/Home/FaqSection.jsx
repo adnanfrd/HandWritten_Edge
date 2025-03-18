@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import gsap from "gsap";
 import { Plus, Minus } from "lucide-react";
 import { damion } from "../AboutUs/fonts";
+import Link from "next/link";
 
 const faqsLeft = [
   { question: "Why handwritten letters? Aren't digital methods more efficient?", answer: "Handwritten letters evoke emotions and build trust better than digital messages." },
@@ -129,9 +130,11 @@ const FaqSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
         >
+          <Link href="/faqs">
           <button className="px-6 py-3 bg-black cursor-pointer text-white font-semibold rounded-lg shadow-md hover:bg-gradient-to-r from-[#001F3F] to-[#00509E] transition">
             View More
           </button>
+          </Link>
         </motion.div>
       </div>
     </section>

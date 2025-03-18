@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { damion } from "../AboutUs/fonts";
+import Link from "next/link";
 
 const ContactSection = () => {
   return (
@@ -33,6 +34,7 @@ const ContactSection = () => {
         </h2>
 
         {/* Call-to-Action Button */}
+        <Link href="/contact">
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
@@ -40,6 +42,7 @@ const ContactSection = () => {
         >
           Contact Us
         </motion.button>
+        </Link>
       </motion.div>
     </section>
   );
