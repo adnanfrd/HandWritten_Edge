@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { damion } from "../AboutUs/fonts";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -40,13 +41,15 @@ const HeroSection = () => {
           Crafting personal connections through the blend of old-world charm and modern tech.
         </motion.p>
 
+        <Link href="/holiday-cards" >
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="mt-6 bg-gradient-to-r from-purple-600 to-pink-500 px-8 py-3 rounded-xl text-lg font-semibold shadow-md hover:shadow-lg transition-all"
+          className="mt-6 bg-gradient-to-r hover:cursor-pointer from-purple-600 to-pink-500 px-8 py-3 rounded-xl text-lg font-semibold shadow-md hover:shadow-lg transition-all"
         >
           Discover The Magic
         </motion.button>
+        </Link>
       </div>
     </div>
   );

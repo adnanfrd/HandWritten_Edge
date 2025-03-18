@@ -26,7 +26,7 @@ const ElevateSection = () => {
       >
         <h1 className={`${damion.className} text-4xl md:text-6xl font-extrabold italic leading-tight`}>
           Elevate Your Client <br />
-          <span className="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-[#001F3F] to-[#00509E] bg-clip-text text-transparent">
             Communication
           </span>
         </h1>

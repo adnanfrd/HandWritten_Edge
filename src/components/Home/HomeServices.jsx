@@ -38,9 +38,10 @@ const HomeServices = () => {
         className={`${damion.className} text-5xl md:text-7xl font-extrabold italic text-gray-900 relative z-10`}
       >
         Our&nbsp;
-        <span className="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
-          Services
-        </span>
+        <span className="bg-gradient-to-r from-[#001F3F] to-[#00509E] bg-clip-text text-transparent">
+  Services
+</span>
+
       </motion.h2>
 
       {/* Subtitle */}

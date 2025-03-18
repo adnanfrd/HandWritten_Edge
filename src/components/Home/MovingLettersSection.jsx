@@ -1,7 +1,7 @@
-"use client"; 
+"use client";
 
 import Image from "next/image";
-import { motion } from "framer-motion"; 
+import { motion } from "framer-motion";
 import { damion } from "../AboutUs/fonts";
 
 const MovingLettersSection = () => {
@@ -17,20 +17,25 @@ const MovingLettersSection = () => {
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="lg:w-1/2 text-center lg:text-left"
         >
-          <h2 className={`${damion.className} text-4xl md:text-6xl font-extrabold italic leading-tight`}>
+          <h2
+            className={`${damion.className} text-4xl md:text-6xl font-extrabold italic leading-tight`}
+          >
             Pioneering The Perfect Blend Of <br />
-            <span className="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[#001F3F] to-[#00509E] bg-clip-text text-transparent">
               Tradition & Technology
             </span>
           </h2>
 
-          <h3 className={`${damion.className} mt-6 text-2xl md:text-3xl font-semibold italic text-gray-800`}>
+          <h3
+            className={`${damion.className} mt-6 text-2xl md:text-3xl font-semibold italic text-gray-800`}
+          >
             We Know Moving. We Know Letters.
           </h3>
 
           <p className="mt-4 text-gray-600 leading-relaxed text-lg">
-            Having been in the moving industry, we understand the nuances of businesses and clients alike. 
-            We took the sentimentality of handwritten letters and supercharged it with technology to ensure 
+            Having been in the moving industry, we understand the nuances of
+            businesses and clients alike. We took the sentimentality of
+            handwritten letters and supercharged it with technology to ensure
             your business stands out and leaves a lasting impression.
           </p>
 

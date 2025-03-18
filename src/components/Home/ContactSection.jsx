@@ -26,7 +26,7 @@ const ContactSection = () => {
       >
         <h2 className={`${damion.className} text-4xl md:text-6xl font-extrabold italic leading-tight`}>
           Still Have Some{" "}
-          <span className="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-[#001F3F] to-[#00509E] bg-clip-text text-transparent">
             Questions?
           </span>
           <br /> Contact Us.
