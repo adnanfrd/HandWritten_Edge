@@ -34,16 +34,22 @@ const HandwritingEffect = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setRestart(false);
-      setTimeout(() => setRestart(true), 200); // Restart typewriter after a short delay
-    }, 37000); // Repeat every 10 seconds
+      setTimeout(() => setRestart(true), 300); 
+    }, 15000);
 
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center gap-10 px-6 md:px-20 py-12 relative">
-      {/* Left Side: Mobile UI */}
+    <div className="flex flex-col md:flex-row items-center justify-center gap-10 px-6 md:px-20 py-12 relative bg-gray-100 min-h-screen">
       <div className="relative w-60 h-96 bg-gray-100 rounded-2xl shadow-lg border p-6 overflow-hidden">
+        <div
+          className="absolute inset-0 bg-cover bg-center z-1 opacity-30"
+          style={{
+            backgroundImage: "url('/mobile-bg.webp')",
+          }}
+        ></div>
+
         {restart && (
           <motion.div
             key={restart}
@@ -54,17 +60,15 @@ const HandwritingEffect = () => {
           >
             <Typewriter
               text="Kelly! Thank you so much for your generous gift. Your kindness means the world to me. I truly appreciate your thoughtful gesture. Wishing you all the best and endless happiness!"
-              delaySpeed={50}
+              delaySpeed={40}
               cursorClassName="hidden"
             />
           </motion.div>
         )}
 
-        {/* Phone Bottom Button */}
         <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 w-24 h-10 bg-gray-300 rounded-full"></div>
       </div>
 
-      {/* Dotted Curve Path (SVG) */}
       <motion.div
         initial={{ pathLength: 0 }}
         animate={{ pathLength: 1 }}
@@ -74,7 +78,7 @@ const HandwritingEffect = () => {
         <svg width="200" height="100">
           <path
             d="M10,90 Q95,-40 190,90"
-            stroke="gray"
+            stroke="black"
             strokeWidth="2"
             strokeDasharray="5,5"
             fill="transparent"
@@ -82,17 +86,15 @@ const HandwritingEffect = () => {
         </svg>
       </motion.div>
 
-      {/* Right Side: Writing Effect */}
       <div className="relative w-80 h-60 bg-gray-100 border rounded-lg p-6 shadow-lg">
         {restart && (
           <Typewriter
             text="Kelly! Thank you so much for your generous gift. Your kindness means the world to me. I truly appreciate your thoughtful gesture. Wishing you all the best and endless happiness!"
-            delaySpeed={50}
+            delaySpeed={40}
             cursorClassName="hidden"
           />
         )}
 
-        {/* Animated Pencil Writing */}
         <motion.div className="absolute bottom-2 right-2">
           <PencilSVG />
         </motion.div>

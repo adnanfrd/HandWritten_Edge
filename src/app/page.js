@@ -1,6 +1,6 @@
 import ContactSection from "@/components/Home/ContactSection";
 import ElevateSection from "@/components/Home/ElevateSection";
-import FaqSection from "@/components/Home/FaqSection";
+// import FaqSection from "@/components/Home/FaqSection";
 import HandwritingPage from "@/components/Home/HandwritingPage";
 import HeroSection from "@/components/Home/HeroHome";
 import HomeServices from "@/components/Home/HomeServices";
@@ -24,7 +24,7 @@ export default function Home() {
     <WhyHandwrittenLetters/>
     <PersonalTouch/>
     <Testimonials/>
-    <FaqSection/>
+    {/* <FaqSection/> */}
     <ContactSection/>
    </div>
   );
