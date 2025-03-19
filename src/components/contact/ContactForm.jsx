@@ -8,7 +8,6 @@ const ContactForm = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-r from-gray-100 to-gray-50 px-4 py-12">
       <div className="max-w-6xl w-full grid sm:grid-cols-1 md:grid-cols-2 gap-12 bg-white p-6 sm:p-10 rounded-2xl shadow-2xl">
-        {/* Left Section - Contact Info */}
         <motion.div
           className="space-y-6 text-center sm:text-left"
           initial="hidden"

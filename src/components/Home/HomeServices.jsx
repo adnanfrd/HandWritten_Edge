@@ -35,7 +35,7 @@ const HomeServices = () => {
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-        className={`${damion.className} text-5xl md:text-7xl font-extrabold italic text-gray-900 relative z-10`}
+        className="custom-font text-5xl md:text-7xl font-extrabold italic text-gray-900 relative z-10"
       >
         Our&nbsp;
         <span className="bg-gradient-to-r from-[#001F3F] to-[#00509E] bg-clip-text text-transparent">

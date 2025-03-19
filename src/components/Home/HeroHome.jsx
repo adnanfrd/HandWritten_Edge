@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { damion } from "../AboutUs/fonts";
+// import { damion } from "../AboutUs/fonts";
 import Link from "next/link";
 
 const HeroSection = () => {
@@ -25,7 +25,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className={`${damion.className} text-4xl md:text-8xl font-extrabold italic leading-tight`}
+          className="custom-font text-4xl md:text-7xl font-extrabold italic leading-tight"
         >
           Revolutionizing Communication
           <br />

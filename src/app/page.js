@@ -1,6 +1,7 @@
 import ContactSection from "@/components/Home/ContactSection";
 import ElevateSection from "@/components/Home/ElevateSection";
 import FaqSection from "@/components/Home/FaqSection";
+import HandwritingPage from "@/components/Home/HandwritingPage";
 import HeroSection from "@/components/Home/HeroHome";
 import HomeServices from "@/components/Home/HomeServices";
 import MovingLettersSection from "@/components/Home/MovingLettersSection";
@@ -17,6 +18,7 @@ export default function Home() {
     {/* <VideoSection/> */}
     <HomeServices/>
     <MovingLettersSection/>
+    <HandwritingPage/>
     <StaySection/>
     <ElevateSection/>
     <WhyHandwrittenLetters/>
