@@ -41,8 +41,8 @@ const HandwritingEffect = () => {
   }, []);
 
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center gap-10 px-6 md:px-20 py-12 relative bg-gray-100 min-h-screen">
-      <div className="relative w-60 h-96 bg-gray-100 rounded-2xl shadow-lg border p-6 overflow-hidden">
+    <div className="flex flex-col md:flex-row items-center justify-center gap-10 px-6 md:px-20 py-12 relative bg-gradient-to-r from-[#001f3f49] to-[#004f9e52] min-h-screen">
+      <div className="relative w-60 h-96 bg-[#004f9e52] rounded-2xl shadow-lg border p-6 overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center z-1 opacity-30"
           style={{
@@ -78,7 +78,7 @@ const HandwritingEffect = () => {
         <svg width="200" height="100">
           <path
             d="M10,90 Q95,-40 190,90"
-            stroke="black"
+            stroke="white"
             strokeWidth="2"
             strokeDasharray="5,5"
             fill="transparent"
