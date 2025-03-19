@@ -8,7 +8,7 @@ const HeroSection = () => {
     <div className="relative w-full h-screen overflow-hidden">
       {/* ✅ Embedded YouTube Video */}
       <iframe
-        className="absolute inset-0 w-full h-full object-cover"
+        className="absolute inset-0 w-full h-full object-cover scale-125"
         src="https://www.youtube.com/embed/We_v0tJ0qHI?autoplay=1&loop=1&mute=1&controls=0&playlist=We_v0tJ0qHI"
         title="YouTube Video"
         frameBorder="0"
@@ -38,17 +38,18 @@ const HeroSection = () => {
           transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
           className="mt-4 text-lg md:text-xl max-w-3xl font-medium text-gray-200"
         >
-          Crafting personal connections through the blend of old-world charm and modern tech.
+          Crafting personal connections through the blend of old-world charm and
+          modern tech.
         </motion.p>
 
-        <Link href="/holiday-cards" >
-        <motion.button
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          className="mt-6 hover:cursor-pointer bg-black hover:bg-gradient-to-r from-[#001F3F] to-[#00509E]  px-8 py-3 rounded-xl text-lg font-semibold shadow-md hover:shadow-lg transition-all"
-        >
-          Discover The Magic
-        </motion.button>
+        <Link href="/holiday-cards">
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="mt-6 hover:cursor-pointer bg-black hover:bg-gradient-to-r from-[#001F3F] to-[#00509E]  px-8 py-3 rounded-xl text-lg font-semibold shadow-md hover:shadow-lg transition-all"
+          >
+            Discover The Magic
+          </motion.button>
         </Link>
       </div>
     </div>
