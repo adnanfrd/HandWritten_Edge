@@ -35,7 +35,7 @@ const HandwritingEffect = () => {
     const interval = setInterval(() => {
       setRestart(false);
       setTimeout(() => setRestart(true), 200); // Restart typewriter after a short delay
-    }, 40000); // Repeat every 10 seconds
+    }, 37000); // Repeat every 10 seconds
 
     return () => clearInterval(interval);
   }, []);
