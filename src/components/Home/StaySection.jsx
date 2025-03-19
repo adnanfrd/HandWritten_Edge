@@ -20,7 +20,7 @@ const StaySection = () => {
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-        className={`${damion.className} text-4xl md:text-7xl font-bold italic text-gray-900 relative z-10`}
+        className=" custom-font text-4xl md:text-5xl font-bold italic text-gray-900 relative z-10"
       >
         Stay With&nbsp;
         <span className="bg-gradient-to-r from-[#001F3F] to-[#00509E] bg-clip-text text-transparent">
@@ -45,11 +45,9 @@ const StaySection = () => {
 
             {/* Icon */}
             <social.icon className="w-12 h-12 text-indigo-900 group-hover:text-purple-600 transition-colors duration-300" />
-
+            
             {/* Social Name */}
-            <p
-              className={`${damion.className} mt-4 text-2xl font-semibold italic text-gray-900`}
-            >
+            <p className={`${damion.className} mt-4 text-2xl font-semibold italic text-gray-900`}>
               {social.name}
             </p>
           </motion.div>

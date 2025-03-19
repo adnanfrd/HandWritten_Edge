@@ -25,7 +25,8 @@ const ElevateSection = () => {
         transition={{ duration: 0.8, ease: "easeOut" }}
         className="relative z-10 max-w-3xl px-6"
       >
-        <h1 className={`${damion.className} text-4xl md:text-6xl font-extrabold italic leading-tight`}>
+        <h1 className="custom-font text-4xl md:text-6xl font-extrabold italic leading-tight
+        ">
           Elevate Your Client <br />
           <span className="bg-gradient-to-r from-[#001F3F] to-[#00509E] bg-clip-text text-transparent">
             Communication
