@@ -34,29 +34,31 @@ const HandwritingEffect = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setRestart(false);
-      setTimeout(() => setRestart(true), 300); 
+      setTimeout(() => setRestart(true), 300);
     }, 15000);
 
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center gap-10 px-6 md:px-20 py-12 relative bg-gradient-to-r from-[#001f3f49] to-[#004f9e52] min-h-screen">
-      <div className="relative w-60 h-96 bg-[#004f9e52] rounded-2xl shadow-lg border p-6 overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center z-1 opacity-30"
-          style={{
-            backgroundImage: "url('/mobile-bg.webp')",
-          }}
-        ></div>
+    <div className="relative flex flex-col md:flex-row items-center justify-center gap-10 px-6 md:px-20 py-12 bg-white min-h-screen">
+      
+      {/* ✅ Mobile Image (Increased Size) */}
+      <div className="relative w-80 h-[550px] flex items-center justify-center">
+        <img 
+          src="/mobile-bg.webp" 
+          alt="Mobile Preview" 
+          className="w-full h-full object-cover rounded-2xl shadow-lg"
+        />
 
+        {/* ✅ Centered Text Inside Mobile Screen */}
         {restart && (
           <motion.div
             key={restart}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.8 }}
-            className="absolute top-6 left-6 right-6 bg-white p-4 rounded-lg shadow-md"
+            className="absolute inset-0 flex items-center justify-center bg-white/80 p-10 rounded-lg shadow-md text-black mx-4"
           >
             <Typewriter
               text="Kelly! Thank you so much for your generous gift. Your kindness means the world to me. I truly appreciate your thoughtful gesture. Wishing you all the best and endless happiness!"
@@ -65,10 +67,9 @@ const HandwritingEffect = () => {
             />
           </motion.div>
         )}
-
-        <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 w-24 h-10 bg-gray-300 rounded-full"></div>
       </div>
 
+      {/* Optional Handwriting Animation */}
       <motion.div
         initial={{ pathLength: 0 }}
         animate={{ pathLength: 1 }}
@@ -86,6 +87,7 @@ const HandwritingEffect = () => {
         </svg>
       </motion.div>
 
+      {/* Message Box */}
       <div className="relative w-80 h-60 bg-gray-100 border rounded-lg p-6 shadow-lg">
         {restart && (
           <Typewriter
