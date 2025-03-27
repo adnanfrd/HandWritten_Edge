@@ -8,29 +8,28 @@ const HomeServices = () => {
   const services = [
     {
       image: "/w1.jpg",
-      title: "Old-School Mail with Cutting-Edge Technology:",
+      title: "Classic Letters Meet Advanced Innovation:",
       description:
-        "While most movers send generic postcards, elevate your brand with handwritten letters. Stand apart in a crowded industry and make an impression that counts.",
+        "While most movers send generic postcards, refine your brand with handwritten notes. Stand apart in a crowded market and make an impact that lasts.",
     },
     {
       image: "/w2.jpg",
-      title: "Unforgettable First Impressions:",
+      title: "Unmatched First Impressions:",
       description:
-        "Size matters in making an impression. With our customizable 5×7 cards, let your brand stand out uniquely in a crowd. Tailored for movers, these premium cards ensure lasting impact.",
+        "Size matters in making an impact. With our premium 5×7 cards, let your brand shine brightly in a crowd. Designed for movers, these unique cards ensure strong recall.",
     },
     {
       image: "/w3.jpg",
-      title: "Tired of Returned Mail? We Were Too.",
+      title: "Frustrated with Returned Mail? So Were We.",
       description:
-        "Ever sent postcards that came back undelivered? MoveCleanse, our cloud-based tool, meticulously verifies listings to prevent wasted time and mail.",
+        "Ever sent postcards that bounced back? MoveCleanse, our cloud-based solution, thoroughly verifies addresses to prevent wasted effort and mail.",
     },
-  ];
+];
+
 
   return (
     <section className="relative py-16 px-6 bg-gradient-to-b from-white to-gray-100 text-center overflow-hidden">
-      {/* Subtle Background Texture */}
 
-      {/* Title */}
       <motion.h2
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}

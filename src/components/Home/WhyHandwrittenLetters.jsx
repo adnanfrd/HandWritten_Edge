@@ -74,7 +74,9 @@ const WhyHandwrittenLetters = () => {
       <div className="relative z-10 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Content Section */}
         <div ref={contentRef}>
-          <h2 className={`${damion.className} text-4xl md:text-7xl font-bold italic text-black`}>
+          <h2
+            className={`${damion.className} text-4xl md:text-7xl font-bold italic text-black`}
+          >
             Why Handwritten <br />
             <span className="bg-gradient-to-r from-[#001F3F] to-[#00509E] bg-clip-text text-transparent">
               Letters?
@@ -82,11 +84,16 @@ const WhyHandwrittenLetters = () => {
           </h2>
 
           <p className="text-gray-700 mt-4 text-lg leading-relaxed">
-            In our moving world, trust is everything. Think about the impact of receiving a handwritten note in today's digital age. It’s not just old-school; it’s powerful.
-            By adding handwritten letters to our communication strategy, we’re not just moving boxes; we’re building lasting relationships.
+            In our moving world, trust is everything. Imagine the impact of
+            getting a handwritten note in this digital era. It is not just
+            nostalgic; it is meaningful. By using handwritten letters in our
+            outreach, we are not just moving boxes; we are creating real
+            connections.
           </p>
           <p className="text-gray-700 mt-3 text-lg leading-relaxed">
-            It’s a simple gesture that tells our clients they’re more than just another move to us. In an industry where trust can set us apart, a personal touch can be our competitive edge.
+            It is a simple act that shows our clients they are more than just
+            another move to us. In a space where trust makes the difference, a
+            personal touch can be our strongest edge.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-6 text-lg">
@@ -109,9 +116,9 @@ const WhyHandwrittenLetters = () => {
           </div>
 
           <Link href="/handwritten-letters">
-          <button className="mt-6 px-6 py-3 hover:cursor-pointer bg-black  text-white font-semibold rounded-lg hover:bg-gradient-to-r from-[#001F3F] to-[#00509E] transition transform hover:scale-105 shadow-md">
-            Learn More
-          </button>
+            <button className="mt-6 px-6 py-3 hover:cursor-pointer bg-black  text-white font-semibold rounded-lg hover:bg-gradient-to-r from-[#001F3F] to-[#00509E] transition transform hover:scale-105 shadow-md">
+              Learn More
+            </button>
           </Link>
         </div>
 

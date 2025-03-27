@@ -16,7 +16,6 @@ const HeroSection = () => {
         allowFullScreen
       ></iframe>
 
-      {/* Glassmorphism Blur Overlay */}
       <div className="absolute inset-0 bg-black/10 backdrop-blur-lg"></div>
 
       {/* Content */}
@@ -38,8 +37,7 @@ const HeroSection = () => {
           transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
           className="mt-4 text-lg md:text-xl max-w-3xl font-medium text-gray-200"
         >
-          Crafting personal connections through the blend of old-world charm and
-          modern tech.
+          Crafting human bonds through the fusion of vintage allure and modern technology.
         </motion.p>
 
         <Link href="/holiday-cards">

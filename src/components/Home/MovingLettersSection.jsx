@@ -33,10 +33,7 @@ const MovingLettersSection = () => {
             We Know Moving. We Know Letters.
           </h3>
           <p className="mt-4 text-gray-600 leading-relaxed text-lg">
-            Having been in the moving industry, we understand the nuances of
-            businesses and clients alike. We took the sentimentality of
-            handwritten letters and supercharged it with technology to ensure
-            your business stands out and leaves a lasting impression.
+          Being part of the moving industry, we grasp the nuances of businesses and clients alike. We embraced the sentimentality of handwritten letters and infused it with technology to help your business shine and make a lasting mark.
           </p>
            <Link href="/about">
           <motion.button
