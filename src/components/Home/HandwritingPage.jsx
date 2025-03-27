@@ -42,12 +42,11 @@ const HandwritingEffect = () => {
 
   return (
     <div className="relative flex flex-col md:flex-row items-center justify-center gap-10 px-6 md:px-20 py-12 bg-white min-h-screen">
-      
       {/* ✅ Mobile Image (Increased Size) */}
       <div className="relative w-80 h-[550px] flex items-center justify-center">
-        <img 
-          src="/mobile-bg.webp" 
-          alt="Mobile Preview" 
+        <img
+          src="/mobile-bg.webp"
+          alt="Mobile Preview"
           className="w-full h-full object-cover rounded-2xl shadow-lg"
         />
 
