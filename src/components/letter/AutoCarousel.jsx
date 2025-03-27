@@ -11,7 +11,7 @@ const Carousel = ({ items }) => {
   useEffect(() => {
     const interval = setInterval(() => {
       handleNext();
-    }, 5000); // Auto-scroll every 5 seconds
+    }, 5000); 
 
     return () => clearInterval(interval);
   }, [currentIndex]);
@@ -55,7 +55,6 @@ const Carousel = ({ items }) => {
         ))}
       </div>
 
-      {/* Navigation Buttons */}
       <div className="absolute top-1/2 transform -translate-y-1/2 w-full flex justify-between px-4">
         <button
           onClick={handlePrev}
@@ -71,7 +70,6 @@ const Carousel = ({ items }) => {
         </button>
       </div>
 
-      {/* Dots Indicator */}
       <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
         {items.map((_, index) => (
           <button
@@ -90,35 +88,35 @@ const Carousel = ({ items }) => {
 const items = [
   {
     id: 1,
-    src: "/font1.webp",
+    src: "/font1.jpg",
     alt: "Image 1",
     title: "Cursive Cascade",
     description: "Elegance from a bygone era.",
   },
   {
     id: 2,
-    src: "/font2.webp",
+    src: "/font2.jpg",
     alt: "Image 2",
     title: "Steady Script",
     description: "A firm, consistent style.",
   },
   {
     id: 3,
-    src: "/font3.webp",
+    src: "/font3.jpg",
     alt: "Image 2",
     title: "Steady Script",
     description: "A firm, consistent style.",
   },
   {
     id: 4,
-    src: "/font4.webp",
+    src: "/font4.jpg",
     alt: "Image 2",
     title: "Steady Script",
     description: "A firm, consistent style.",
   },
   {
     id: 3,
-    src: "/font5.webp",
+    src: "/font1.jpg",
     alt: "Image 2",
     title: "Steady Script",
     description: "A firm, consistent style.",
