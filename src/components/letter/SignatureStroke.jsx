@@ -47,7 +47,7 @@ const SignatureStroke = () => {
           className="mt-6 md:mt-0 md:w-1/2 flex justify-center"
         >
           <Image
-            src="/Nib-Sizes-768x648.webp"
+            src="/nib.jpg"
             alt="Signature Stroke"
             width={450}
             height={300}
