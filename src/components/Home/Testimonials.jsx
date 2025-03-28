@@ -11,14 +11,14 @@ const testimonials = [
     name: "Emily Carter",
     company: "Central Coast Moving & Storage",
     quote:
-      "Receiving a handwritten letter evokes emotion that emails can't replicate. HandWritten.com amplifies trust. We, as movers, are in the business of memories, transitions, and new beginnings.",
+      "A handwritten letter sparks emotions that emails simply can't match. HandWritten.com builds trust, making every move feel personal. In the moving industry, we don’t just relocate belongings—we create new beginnings.",
     image: "/testimonial1.jpeg",
   },
   {
     name: "James Bennett",
     company: "Murdock’s Moving & Storage",
     quote:
-      "In the fast-paced world of moving, securing every lead is vital. HandWritten.com has been transformative for Murdock’s Moving, revolutionizing our direct mail campaigns and boosting lead generation and sales. It’s a groundbreaking approach.",
+      "In the fast-paced moving business, every lead matters. HandWritten.com has transformed how we connect with potential clients, elevating our direct mail strategy and driving real results. It’s a game-changer.",
     image: "/testimonial2.jpeg",
   },
 ];
@@ -53,8 +53,8 @@ const Testimonials = () => {
         transition={{ duration: 0.8, delay: 0.2 }}
         className="text-gray-600 mt-3 text-lg"
       >
-        Discover the difference HandWritten.com has made for others in the
-        industry. Here’s what fellow movers have to say.
+        See the impact HandWritten.com has had on the industry—here is what
+        fellow movers are saying.
       </motion.p>
 
       <div className="mt-10 grid md:grid-cols-2 gap-10">
@@ -95,9 +95,9 @@ const Testimonials = () => {
         transition={{ duration: 0.5, delay: 0.3 }}
       >
         <Link href="/testimonial">
-        <button className="bg-black text-white cursor-pointer px-6 py-3 rounded-lg font-semibold hover:bg-gradient-to-r from-[#001F3F] to-[#00509E] transition">
-          Learn More
-        </button>
+          <button className="bg-black text-white cursor-pointer px-6 py-3 rounded-lg font-semibold hover:bg-gradient-to-r from-[#001F3F] to-[#00509E] transition">
+            Learn More
+          </button>
         </Link>
       </motion.div>
     </section>
