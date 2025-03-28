@@ -23,14 +23,14 @@ const Navbar = () => {
       transition={{ duration: 0.6, ease: "easeOut" }}
       className="fixed top-0 left-0 w-full bg-[#022252CC] backdrop-blur-md bg-opacity-90 z-50 shadow-lg"
     >
-      <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center h-[12vh]">
+      <div className="max-w-7xl mx-auto p-2 px-6 md:px-12 flex justify-between items-center h-[12vh]">
         <Link href="/" className="flex items-center space-x-2">
           <Image
-            src="/logohand.jpg"
+            src="/logo.jpg"
             alt="Logo"
-            width={150}
-            height={150}
-            className="rounded-full object-cover"
+            width={100}
+            height={100}
+            className="rounded-2xl object-cover"
           />
         </Link>
 
@@ -56,7 +56,6 @@ const Navbar = () => {
           </Link>
         </div>
 
-        {/* Mobile Menu Button */}
         <button
           className="md:hidden text-white"
           onClick={() => setIsOpen(!isOpen)}
@@ -65,7 +64,6 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile Menu */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
