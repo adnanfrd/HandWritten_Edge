@@ -6,33 +6,34 @@ import { Paintbrush, Trophy, Briefcase, BadgeCheck } from "lucide-react";
 const features = [
   {
     id: 1,
-    title: "Trailblazing",
+    title: "Pioneering Change",
     description:
-      "Breaking the mold and setting the tone, we redefine the art of handwritten letters in the digital era.",
+      "Revolutionizing handwritten communication, we bring timeless tradition into the digital world with a fresh approach.",
     icon: Paintbrush,
   },
   {
     id: 2,
-    title: "Innovation Champions",
+    title: "Innovation Leaders",
     description:
-      "Blending old-world charm with new-age advancements, we're at the forefront of revolutionizing communication.",
+      "Merging classic craftsmanship with modern technology, we’re shaping the future of personal and impactful connections.",
     icon: Trophy,
   },
   {
     id: 3,
-    title: "Fresh Perspectives",
+    title: "Creative Visionaries",
     description:
-      "With a blend of diverse talents, our team brings fresh, out-of-the-box ideas to every project.",
+      "Fueled by diverse expertise, our team introduces unique, inventive solutions that redefine handwritten engagement.",
     icon: Briefcase,
   },
   {
     id: 4,
-    title: "Commitment Assured",
+    title: "Unwavering Dedication",
     description:
-      "We don't just promise; we deliver. Each letter sent through us embodies our dedication to excellence and your success.",
+      "Beyond promises, we take action. Every letter reflects our commitment to quality, trust, and lasting impressions.",
     icon: BadgeCheck,
   },
 ];
+
 
 const FeaturesSection = () => {
   return (

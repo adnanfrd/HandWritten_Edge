@@ -20,9 +20,7 @@ const Impression = () => {
         className="relative text-center px-6 md:px-12 max-w-3xl"
       >
         <h1 className={`${damion.className} text-white text-2xl md:text-4xl font-semibold italic leading-snug`}>
-          Looking to make a lasting impression? Dive into the depth of
-          personalized communication and watch your connections grow, one
-          heartfelt letter at a time.
+        Want to leave a lasting mark? Embrace the power of personalized communication and see your relationships flourish, one heartfelt letter at a time.
         </h1>
         <motion.div
           initial={{ width: 0 }}

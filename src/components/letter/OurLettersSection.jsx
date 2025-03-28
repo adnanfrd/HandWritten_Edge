@@ -73,8 +73,8 @@ export default function OurLettersSection() {
           Our <span className="bg-gradient-to-r from-[#001F3F] to-[#00509E] bg-clip-text text-transparent">Letters</span>
         </h1>
         <h2 className="text-lg md:text-xl font-bold text-gray-700 mt-2">
-          Unfolding Personal Connection in Every Stroke
-        </h2>
+        Crafting Genuine Connections, One Stroke at a Time
+      </h2>
         <p className="mt-4 text-gray-600 text-base md:text-lg leading-relaxed">
           Rediscover the art of genuine connection through our handcrafted
           letters, where innovative techniques meet old-world charm. Every

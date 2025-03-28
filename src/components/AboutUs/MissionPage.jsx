@@ -34,11 +34,9 @@ const MissionPage = () => {
       ref={sectionRef}
       className="relative container mx-auto px-6 py-16 overflow-hidden"
     >
-      {/* Background Floating Elements */}
       <div className="absolute top-16 left-8 w-24 h-24 bg-purple-400 opacity-20 rounded-full blur-3xl animate-pulse"></div>
       <div className="absolute bottom-10 right-8 w-32 h-32 bg-pink-400 opacity-20 rounded-full blur-3xl animate-pulse"></div>
 
-      {/* Title Section */}
       <motion.div
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
@@ -58,7 +56,6 @@ const MissionPage = () => {
         </motion.h2>
       </motion.div>
 
-      {/* Mission Text Blocks */}
       <motion.div
         className="grid md:grid-cols-2 gap-10"
         initial="hidden"
@@ -66,33 +63,40 @@ const MissionPage = () => {
         viewport={{ once: true }}
         variants={{
           hidden: { opacity: 0, y: 40 },
-          visible: { opacity: 1, y: 0, transition: { duration: 0.8, staggerChildren: 0.3 } },
+          visible: {
+            opacity: 1,
+            y: 0,
+            transition: { duration: 0.8, staggerChildren: 0.3 },
+          },
         }}
       >
         <motion.p
-          variants={{ hidden: { opacity: 0, x: -50 }, visible: { opacity: 1, x: 0 } }}
+          variants={{
+            hidden: { opacity: 0, x: -50 },
+            visible: { opacity: 1, x: 0 },
+          }}
           className="text-lg text-gray-700 leading-relaxed bg-white/50 backdrop-blur-lg p-6 rounded-lg shadow-md"
         >
-          You know, back in the day, there was something special about receiving
-          a handwritten note. It just felt... genuine. At HandWritten.com,
-          we’re all about capturing that nostalgic magic. We’re meshing good
-          old-fashioned penmanship with today’s tech to offer a fresh touch in
-          communication.
+          Back in the day, receiving a handwritten note had a unique charm. It
+          felt... real. At HandWritten.com, we’re reviving that nostalgic magic.
+          We blend timeless penmanship with modern tech to bring a fresh twist
+          to communication.
         </motion.p>
 
         <motion.p
-          variants={{ hidden: { opacity: 0, x: 50 }, visible: { opacity: 1, x: 0 } }}
+          variants={{
+            hidden: { opacity: 0, x: 50 },
+            visible: { opacity: 1, x: 0 },
+          }}
           className="text-lg text-gray-700 leading-relaxed bg-white/50 backdrop-blur-lg p-6 rounded-lg shadow-md"
         >
-          For us in the moving industry, we know it’s more than just shifting
-          boxes; it’s about making genuine connections. In a world that’s
-          dinging with new emails and buzzing with notifications, we’re putting
-          pen to paper to create a memorable impact. Because sometimes, the old
-          ways are still the best ways.
+          In the moving industry, it’s never just about shifting boxes—it’s
+          about real connections. In a world filled with dings and buzzes, we’re
+          bringing back pen and paper to leave a lasting impression. Because
+          sometimes, the old ways remain the best.
         </motion.p>
       </motion.div>
 
-      {/* Image Section with Hover Effects */}
       <motion.div
         className="grid md:grid-cols-2 gap-10 mt-12"
         initial="hidden"
@@ -100,7 +104,11 @@ const MissionPage = () => {
         viewport={{ once: true }}
         variants={{
           hidden: { opacity: 0, scale: 0.9 },
-          visible: { opacity: 1, scale: 1, transition: { duration: 0.8, staggerChildren: 0.3 } },
+          visible: {
+            opacity: 1,
+            scale: 1,
+            transition: { duration: 0.8, staggerChildren: 0.3 },
+          },
         }}
       >
         <motion.div
@@ -132,7 +140,6 @@ const MissionPage = () => {
         </motion.div>
       </motion.div>
 
-      {/* More Mission Text Blocks */}
       <motion.div
         className="grid md:grid-cols-2 gap-10 mt-12"
         initial="hidden"
@@ -140,28 +147,37 @@ const MissionPage = () => {
         viewport={{ once: true }}
         variants={{
           hidden: { opacity: 0, y: 40 },
-          visible: { opacity: 1, y: 0, transition: { duration: 0.8, staggerChildren: 0.3 } },
+          visible: {
+            opacity: 1,
+            y: 0,
+            transition: { duration: 0.8, staggerChildren: 0.3 },
+          },
         }}
       >
         <motion.p
-          variants={{ hidden: { opacity: 0, x: -50 }, visible: { opacity: 1, x: 0 } }}
+          variants={{
+            hidden: { opacity: 0, x: -50 },
+            visible: { opacity: 1, x: 0 },
+          }}
           className="text-lg text-gray-700 leading-relaxed bg-white/50 backdrop-blur-lg p-6 rounded-lg shadow-md"
         >
-          Remember the excitement of receiving a personal letter in the mail?
-          That genuine smile, the warmth of holding tangible words meant just
-          for you. In an era where digital messages clutter our inboxes, there’s
-          something irreplaceably special about a handwritten note.
+          Think back to the joy of receiving a personal letter in the mail— that
+          warm smile, the feeling of holding heartfelt words meant just for you.
+          In a world where digital messages flood our inboxes, a handwritten
+          note remains truly special.
         </motion.p>
 
         <motion.p
-          variants={{ hidden: { opacity: 0, x: 50 }, visible: { opacity: 1, x: 0 } }}
+          variants={{
+            hidden: { opacity: 0, x: 50 },
+            visible: { opacity: 1, x: 0 },
+          }}
           className="text-lg text-gray-700 leading-relaxed bg-white/50 backdrop-blur-lg p-6 rounded-lg shadow-md"
         >
-          Amidst the bustle of packing, the chaos of boxes, and the mix of
-          emotions that moving day brings, there’s always that one moment of
-          pause. When you label a box, jotting down its contents or the room it
-          belongs to—that handwritten note, while simple, carries a weight of
-          memories and sentiments.
+          Amidst the rush of packing, the stacks of boxes, and the whirlwind of
+          emotions that moving day brings, there’s always a brief moment of
+          pause. When you mark a box, noting its contents or destination—that
+          simple handwritten note holds a depth of memories and meaning.
         </motion.p>
       </motion.div>
     </section>
