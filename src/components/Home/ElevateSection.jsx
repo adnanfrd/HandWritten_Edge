@@ -12,21 +12,18 @@ const ElevateSection = () => {
         backgroundImage: "url('/pexels-ketut-subiyanto-4247768-1.webp')",
         backgroundSize: "cover",
         backgroundPosition: "center",
-        backgroundAttachment: "fixed", // Ensures fixed positioning
+        backgroundAttachment: "fixed", 
       }}
     >
-      {/* Overlay for better readability */}
       <div className="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
 
-      {/* Animated Content */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
         className="relative z-10 max-w-3xl px-6"
       >
-        <h1 className="custom-font text-4xl md:text-6xl font-extrabold italic leading-tight
-        ">
+        <h1 className={` ${damion.className}text-4xl md:text-6xl font-extrabold italic leading-tight `}>
           Elevate Your Client <br />
           <span className="bg-gradient-to-r from-[#001F3F] to-[#00509E] bg-clip-text text-transparent">
             Communication

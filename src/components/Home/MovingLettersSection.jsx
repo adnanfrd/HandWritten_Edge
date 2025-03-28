@@ -19,7 +19,7 @@ const MovingLettersSection = () => {
           className="lg:w-1/2 text-center lg:text-left"
         >
           <h2
-            className="custom-font text-3xl md:text-4xl font-extrabold italic leading-25"
+            className={` ${damion.className} text-3xl md:text-6xl font-extrabold italic `}
           >
             Pioneering The Perfect Blend Of <br />
             <span className="bg-gradient-to-r from-[#001F3F] to-[#00509E] bg-clip-text text-transparent">

@@ -69,10 +69,8 @@ const WhyHandwrittenLetters = () => {
       ref={sectionRef}
       className="relative py-20 px-6 md:px-12 lg:px-20 xl:px-28 bg-gradient-to-b from-gray-50 to-white"
     >
-      {/* Background Overlay */}
 
       <div className="relative z-10 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        {/* Content Section */}
         <div ref={contentRef}>
           <h2
             className={`${damion.className} text-4xl md:text-7xl font-bold italic text-black`}
