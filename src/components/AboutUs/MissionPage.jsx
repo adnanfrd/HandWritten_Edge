@@ -74,7 +74,7 @@ const MissionPage = () => {
           className="text-lg text-gray-700 leading-relaxed bg-white/50 backdrop-blur-lg p-6 rounded-lg shadow-md"
         >
           You know, back in the day, there was something special about receiving
-          a handwritten note. It just felt... genuine. At MovingLetters.ai,
+          a handwritten note. It just felt... genuine. At HandWritten.com,
           we’re all about capturing that nostalgic magic. We’re meshing good
           old-fashioned penmanship with today’s tech to offer a fresh touch in
           communication.
