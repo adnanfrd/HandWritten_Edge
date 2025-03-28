@@ -1,12 +1,11 @@
 "use client";
 import { motion } from "framer-motion";
-// import { damion } from "../AboutUs/fonts";
+import { damion } from "../AboutUs/fonts";
 import Link from "next/link";
 
 const HeroSection = () => {
   return (
     <div className="relative w-full h-screen overflow-hidden">
-      {/* ✅ Embedded YouTube Video */}
       <iframe
         className="absolute inset-0 w-full h-full object-cover scale-125"
         src="https://www.youtube.com/embed/We_v0tJ0qHI?autoplay=1&loop=1&mute=1&controls=0&playlist=We_v0tJ0qHI"
@@ -18,13 +17,12 @@ const HeroSection = () => {
 
       <div className="absolute inset-0 bg-black/10 backdrop-blur-lg"></div>
 
-      {/* Content */}
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-6">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="custom-font text-4xl md:text-7xl font-extrabold italic leading-tight"
+          className={`${damion.className} custom-font text-4xl md:text-7xl font-extrabold italic leading-tight`}
         >
           Revolutionizing Communication
           <br />
