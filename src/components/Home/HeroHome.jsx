@@ -24,7 +24,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className={`${damion.className} custom-font text-4xl md:text-7xl font-extrabold italic leading-tight`}
         >
-          Revolutionizing Communication
+          Transforming Connections
           <br />
           For Movers
         </motion.h1>
