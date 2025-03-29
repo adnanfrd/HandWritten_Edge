@@ -26,7 +26,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto p-2 px-6 md:px-12 flex justify-between items-center h-[12vh]">
         <Link href="/" className="flex items-center space-x-2">
           <Image
-            src="/logo.jpg"
+            src="/logo.png"
             alt="Logo"
             width={100}
             height={100}

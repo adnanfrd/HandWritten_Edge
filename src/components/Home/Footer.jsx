@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 text-center md:text-left">
         
         <div>
-          <img src="/logo.jpg" alt="MovingLetters.ai" className="mx-auto md:mx-0 h-14" />
+          <img src="/logo.png" alt="MovingLetters.ai" className="mx-auto md:mx-0 h-14" />
           <p className="mt-4 text-gray-400 leading-relaxed">
             Where technology meets tradition, crafting handwritten connections for modern movers.
           </p>
