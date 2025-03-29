@@ -30,7 +30,7 @@ const Navbar = () => {
             alt="Logo"
             width={100}
             height={100}
-            className="rounded-2xl object-cover"
+            className=" object-cover"
           />
         </Link>
 
