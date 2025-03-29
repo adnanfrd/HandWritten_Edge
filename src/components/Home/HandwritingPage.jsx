@@ -39,7 +39,7 @@ const HandwritingEffect = () => {
   }, []);
 
   return (
-    <div className="relative flex flex-col md:flex-row items-center justify-center gap-10 px-6 md:px-20 py-12 bg-white min-h-screen">
+    <div className="relative flex flex-col md:flex-row items-center justify-center gap-10 px-6 md:px-20 py-12 min-h-screen">
       <div className="relative w-80 h-[550px] flex items-center justify-center">
         <img
           src="/mobile.jpg"
@@ -53,7 +53,7 @@ const HandwritingEffect = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.8 }}
-            className="absolute inset-0 flex items-center justify-center bg-white/80 p-10 rounded-lg shadow-md text-black mx-4"
+            className="absolute inset-0 flex items-center justify-center  p-12 rounded-lg shadow-md text-black mx-4"
           >
             <Typewriter
               text="Kelly! Thank you so much for your generous gift. Your kindness means the world to me. I truly appreciate your thoughtful gesture. Wishing you all the best and endless happiness!"
