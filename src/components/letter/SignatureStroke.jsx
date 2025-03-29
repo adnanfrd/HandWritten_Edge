@@ -8,7 +8,6 @@ const SignatureStroke = () => {
   return (
     <div className="bg-gray-100 py-12 px-6 md:px-16">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between">
-        {/* Left Side - Text */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
@@ -44,13 +43,20 @@ const SignatureStroke = () => {
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          className="mt-6 md:mt-0 md:w-1/2 flex justify-center"
+          className="mt-6 md:mt-0 md:w-1/2 flex flex-col items-center space-y-4"
         >
           <Image
             src="/nib.jpg"
-            alt="Signature Stroke"
-            width={450}
-            height={300}
+            alt="Signature Stroke 1"
+            width={300}
+            height={200}
+            className="rounded-lg shadow-lg"
+          />
+          <Image
+            src="/i10.jpg"
+            alt="Signature Stroke 2"
+            width={300}
+            height={200}
             className="rounded-lg shadow-lg"
           />
         </motion.div>
@@ -59,4 +65,4 @@ const SignatureStroke = () => {
   );
 };
 
-export default SignatureStroke
+export default SignatureStroke;

@@ -14,7 +14,7 @@ const items = [
   { id: 7, src: "/i7.jpg", title: "Radiance Pink", desc: "A color that speaks of warmth.", color: "text-blue-600" },
   { id: 8, src: "/i8.jpg", title: "Signature Violet", desc: "The essence of creativity.", color: "text-[#1D2132]" },
   { id: 9, src: "/i4.jpg", title: "Turquoise Temptation", desc: "Cool, inviting, and fresh.", color: "text-blue-500" },
-  { id: 10, src: "/i10.jpg", title: "Multiple Colors", desc: "Refreshing, crisp, and vibrant.", color: "text-2xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text" },
+  // { id: 10, src: "/i10.jpg", title: "Multiple Colors", desc: "Refreshing, crisp, and vibrant.", color: "text-2xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text" },
 
 ];
 
