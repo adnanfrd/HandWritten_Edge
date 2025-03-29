@@ -21,28 +21,31 @@ const MovingLettersSection = () => {
           <h2
             className={` ${damion.className} text-3xl md:text-6xl font-extrabold italic `}
           >
-            Pioneering The Perfect Blend Of <br />
+            Crafting The Ideal Fusion Of <br />
             <span className="bg-gradient-to-r from-[#001F3F] to-[#00509E] bg-clip-text text-transparent">
-              Tradition & Technology
+              Heritage & Innovation
             </span>
           </h2>
 
           <h3
             className={`${damion.className} mt-6 text-2xl md:text-3xl font-semibold italic text-gray-800`}
           >
-            We Know Moving. We Know Letters.
+            We Understand Relocation. We Master Letters.
           </h3>
           <p className="mt-4 text-gray-600 leading-relaxed text-lg">
-          Being part of the moving industry, we grasp the nuances of businesses and clients alike. We embraced the sentimentality of handwritten letters and infused it with technology to help your business shine and make a lasting mark.
+            Being part of the moving industry, we grasp the nuances of
+            businesses and clients alike. We embraced the sentimentality of
+            handwritten letters and infused it with technology to help your
+            business shine and make a lasting mark.
           </p>
-           <Link href="/about">
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="mt-6 px-8 py-3 cursor-pointer bg-black hover:bg-gradient-to-r from-[#001F3F] to-[#00509E]  text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all"
-          >
-            Read More
-          </motion.button>
+          <Link href="/about">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="mt-6 px-8 py-3 cursor-pointer bg-black hover:bg-gradient-to-r from-[#001F3F] to-[#00509E]  text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all"
+            >
+              Read More
+            </motion.button>
           </Link>
         </motion.div>
 

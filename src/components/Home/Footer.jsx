@@ -9,9 +9,8 @@ const Footer = () => {
     <footer className="bg-[#0A043C] text-white py-16 px-6">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 text-center md:text-left">
         
-        {/* Logo & About */}
         <div>
-          <img src="/logohand.jpg" alt="MovingLetters.ai" className="mx-auto md:mx-0 h-14" />
+          <img src="/logo.jpg" alt="MovingLetters.ai" className="mx-auto md:mx-0 h-14" />
           <p className="mt-4 text-gray-400 leading-relaxed">
             Where technology meets tradition, crafting handwritten connections for modern movers.
           </p>
@@ -31,7 +30,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Address */}
         <div>
           <h3 className={`${damion.className} text-3xl font-semibold italic`}>Address</h3>
           <p className="mt-4 flex items-center justify-center md:justify-start text-gray-400 leading-relaxed">
@@ -40,7 +38,6 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* Quick Links */}
         <div>
           <h3 className={`${damion.className} text-3xl font-semibold italic`}>Quick Links</h3>
           <ul className="mt-4 space-y-3 text-gray-400">
@@ -58,7 +55,6 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Important Links */}
         <div>
           <h3 className={`${damion.className} text-3xl font-semibold italic`}>Important Links</h3>
           <ul className="mt-4 space-y-3 text-gray-400">
@@ -77,7 +73,6 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Bottom Divider */}
       <div className="mt-12 border-t border-gray-700 pt-6 text-center text-gray-500 text-sm">
         &copy; {new Date().getFullYear()} HandWritten.com | All Rights Reserved.
       </div>

@@ -42,7 +42,7 @@ const Testimonials = () => {
         transition={{ duration: 0.6 }}
         className={`${damion.className} text-4xl md:text-7xl font-bold italic text-black`}
       >
-        Hear From Fellow{" "}
+        Insights from Fellow{" "}
         <span className="bg-gradient-to-r from-[#001F3F] to-[#00509E] bg-clip-text text-transparent">
           Movers
         </span>
